@@ -45,10 +45,12 @@ a{
 
 h3{
     color: red;
+    margin-left: 5px;
 }
 
 li{
     color: yellow;
+    margin-left: 5px;
 }
 
 li a{
