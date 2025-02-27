@@ -1,0 +1,146 @@
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460, #e94560);
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+footer p{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+    transition: 1.5s;
+    box-shadow: -2px -2px 8px white,2px 2px 10px black;
+    animation: fadeIn 2s ease-in-out, glowEffect 3s infinite alternate, scaleUp 3s infinite alternate;
+}
+
+footer p:hover{
+    box-shadow: -4px -4px 20px red, 4px 4px 20px red;
+}
+
+.welcome{
+    font-size: 50px;
+    text-align: center;
+    color: #ff56a4;
+}
+
+.html, .css{
+    color: #62fbff;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2{
+    color: #80d4ff;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    color: red;
+}
+
+li{
+    color: yellow;
+}
+
+li a{
+    color: blue;
+    font-weight: bold;
+}
+
+span{
+    color: violet;
+    font-weight: bold;
+}
+
+.DAY {
+    margin: 20px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 15px;
+    transition: 1.5s;
+}
+
+.DAY:hover{
+    box-shadow: 4px 4px 20px rgba(0, 255, 242, 0.8);
+}
+
+.welcome {
+    font-size: 50px;
+    text-align: center;
+    background-image: linear-gradient(45deg, #ff56a4, #ff1493, #ff8c00, #ffeb00);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: fadeIn 2s ease-in-out, glowEffect 3s infinite alternate, scaleUp 3s infinite alternate;
+}
+
+.html, .css {
+    text-align: center;
+    font-size: 40px;
+    background-image: linear-gradient(90deg, #62fbff, #0077ff, #ff56a4, #ff8c00);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: slideIn 2s ease-in-out, bounce 3s infinite;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glowEffect {
+    0% {
+        text-shadow: 0 0 5px #ff56a4, 0 0 10px #ff1493;
+    }
+    100% {
+        text-shadow: 0 0 10px #ff8c00, 0 0 20px #ffeb00;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
