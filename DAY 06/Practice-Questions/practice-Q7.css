@@ -1,0 +1,22 @@
+/* Implement the following CSS for given htlm document.
+- set font family of entire document to "Courier New".
+- set text color for all h1 heading to #1b74e4; 
+- set the background color of search button to black & text to white
+- set background color of login & signup button to aqua. */
+
+*{
+    font-family: 'Courier New';
+}
+
+h1{
+    color: #1b74e4;;
+}
+
+#searchbtn{
+    background-color: black;
+    color: white;
+}
+
+.userbtn{
+    background-color: aqua;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="htmlfavicon.png" type="image/x-icon">
+    <title>Radio-Button-in-input-Element</title>
+</head>
+<body>
+    <h1>Radio Button</h1>
+    <form action="/server">
+        <div>
+            <h2>Which is your favorite?</h2>
+            <!-- value="apple"
+            value="banana"
+            value="mango"
+            Actualy value attribute sent the information together data which is we tick out at the radion button.  -->
+            <!-- note: See website url aftr and befor define valur attribute(value="  ") -->
+            <input type="radio" name="fruit" id="apple" value="apple">
+            <label for="apple">Apple</label>
+            <input type="radio" name="fruit" id="banana" value="banana">
+            <label for="banana">Banana</label>
+            <input type="radio" name="fruit" id="mango" value="mango">
+            <label for="mango">Mango</label>
+        </div>
+        <button>submit</button>
+        <!-- here we can easyly do group of checkbox like radio button -->
+         <div>
+            <!-- here we can select multiple after grouping the checkbox but radio button only allow select only one after grouping the radio button. -->
+            <h2>Choose your subject.</h2>
+            <input type="checkbox" name="sub" id="math" value="math">
+            <label for="math">Math</label>
+            <input type="checkbox" name="sub" id="physics" value="phy">
+            <label for="physics">Physics</label>
+            <input type="checkbox" name="sub" id="chemistry" value="chem">
+            <label for="chemistry">Chemistry</label>
+            <input type="checkbox" name="sub" id="english" value="eng">
+            <label for="english">English</label>
+            <input type="checkbox" name="sub" id="hindi" value="hindi">
+            <label for="hindi">Hindi</label>
+         </div>
+         <button>submit</button>
+    </form>
+</body>
+</html>

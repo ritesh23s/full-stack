@@ -1,0 +1,166 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+.explaination{
+    background-color: aqua;
+}
+
+
+/* Selectors in CSS */
+/* Universal-Selector */
+.topic{
+    color: blue;
+}
+
+/* *{
+    font-family: 'Courier New';
+    background-color: blue;
+} */
+
+
+/* Element-selector */
+h3{
+    color: purple;
+}
+
+h1{
+    color: #b92b27;
+}
+
+/* here we cam select multiple element with a saperate comma "," */
+h3,h1{
+    color: #b92b27;
+}
+
+
+/* Id-Selector */
+#myid{
+    background-color: chartreuse;
+}
+
+#login{
+    background-color: white;
+}
+
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+
+
+/* Class-Selector */
+.myclass{
+    color: white;
+    background-color: red;
+}
+
+.upvote{
+    background-color: green;
+    color: white;
+}
+
+
+/* Descendant-Selector */
+p a{
+    color: purple;
+    background-color: yellow;
+}
+
+.descendantselector p {
+    background-color: yellowgreen;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: tomato;
+}
+
+
+/* Adjacent Sibiling Combinator */
+p+h3{
+    text-decoration: underline;
+}
+
+.upvote+button{
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+
+/* Child-Combinator(Child Selector) */
+div > input {
+    background-color: darksalmon;
+}
+
+
+/* Attribute-Selector */
+input[ type="text"]{
+    color: red;
+}
+
+input[ type="password"]{
+    color: green;
+}
+
+/* input[type]{
+    background-color: ghostwhite;
+} */
+
+
+/* Pseudo Class */
+/* :hover */
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+h3:hover{
+    /* text-decoration: none; */
+    text-decoration: overline;
+}
+
+/* :active */
+button:active{
+    background-color: hotpink;
+    color: black;
+}
+
+p:active{
+    font-weight: bold;
+    color: green;
+}
+
+/* :checked */
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+
+
+/* nth-of-type */
+div:nth-of-type(2n){
+    background-color: blanchedalmond;
+}
+
+
+/* Pseudo Elements */
+/* ::first-letter */
+h1::first-letter{
+    color: springgreen;
+}
+
+/* ::first-line */
+.firstlinepseudoelement::first-line{
+    color: red;
+}
+
+/* ::selection */
+p::selection{
+    background-color: rgb(199, 192, 58);
+}

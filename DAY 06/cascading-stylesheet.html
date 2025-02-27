@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/cascading-stylesheet.css">
+    <!-- <link rel="stylesheet" href="css/cascading-stylesheet2.css"> -->
+    <title>Cascading-Stylesheet</title>
+</head>
+<body>
+    <h1 class="heading">&star; Cascading Stylesheet &star;</h1>
+    <p>&rAarr; The "CSS cascade algorithm"'s job is to select CSS declaration in order to determine the correct values for CSS properties</p>
+    <div class="explaination">
+        <h2 class="topic">Explaination: Cascading - Stylesheet</h2>
+        <h3>Cascading StyleSheet</h3>
+        <span>
+            Cascading stylesheet always apply on same elements. Like This &rArr;
+        </span>
+        <pre>
+            h3{
+                background-color: yellow;
+            }
+            
+            h3{
+                background-color: blue;
+            }
+
+
+            Here we gate multiple css property value in "h3" (background-color: yellow; & background-color: blue;)but css value
+            apply on "h3" which is we give in last time (background-color: blue;) 
+            
+            h3{
+                background-color: blue;
+            }
+        </pre>
+        <div class="note">
+            Note: 
+            <ol type="1">
+                <li>Cascading stylesheet always apply on same elements.</li>
+                <li>Cascading stylesheet always apply on thoese element which we give property last time.</li>
+                <li>Cascading stylesheet always apply css including file like <br>
+                    < link rel="stylesheet" href="css/cascading-stylesheet.css"> <br>
+                    < link rel="stylesheet" href="css/cascading-stylesheet2.css">             
+                </li>
+            </ol>
+        </div>
+    </div>
+    <h1 class="heading">&star; Selector Specificity &star;</h1>
+    <p>&rAarr; Specificity is an algorithm that calculate the weight that is applied to a given CSS declaration.</p>
+    <div class="explaination">
+        <h2 class="topic">Explaination: Selector - Specificity</h2>
+        <h2>This is heading</h2>
+        <span>
+            Specificity is "three digits" number in mathematical form  
+        </span>
+        <pre>
+            
+        </pre>
+        <div class="note">
+            
+        </div>
+    </div>
+    <h1 class="heading">&star; !important &star;</h1>
+    <p>&rAarr; To show the most specific thing is document</p>
+    <div class="explaination">
+        <h2 class="topic">Explaination of !important</h2>
+        <span>
+            To show the most specific thing is document
+        </span>
+        <pre>
+            .topic{
+                color: red !important;
+            }
+        </pre>
+    </div>
+</body>
+</html>

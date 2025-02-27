@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style-how-to-include-css.css">
+    <title>How-to-include-CSS</title>
+    <style>
+        ul{
+            color: violet;
+            /* background-color: blue; */
+        }
+    </style>
+</head>
+<body>
+    <h1>There vare three way to include css style.</h1>
+    <ol type="1">
+
+        <!-- Inline -->
+        <li>Inline Style</li>
+        : Wr    iting style directely inline on each element. 
+        like: &rArr; < li style="color: red;">Inline Style < / li> <br>
+        For example: <br>
+        <p style="color: cyan;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora natus nesciunt quam voluptate vitae. Vero in reprehenderit eum. Reiciendis alias animi, excepturi odit ut amet pariatur culpa optio doloribus!
+        </p>
+        <button style="color: blue; background-color: darkkhaki;">help?</button>
+
+        <!-- Internal : using "style" tag -->
+        <li>Internal Style</li>
+        :Using "style" tag &rarr;
+         Style is added using the "style" element in the same document inside the head like &rArr; see inside the pre tag and style element (inside the head of this html file.)
+        <pre>
+            <!-- < style >
+                ul{
+                    color: violet;
+                }
+            < /style > -->
+        </pre> <br>
+        For Example:
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+
+        <!-- External -->
+        <li>Externla Style</li>
+        : Writing CSS in a separate document(css file) and linking it with HTML file. Like &rArr; < link rel="stylesheet" href="css/style-how-to-include-css.css"> <br>
+        For Example:
+        <table border="black">
+            <tr>
+                <th>Name:</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+
+            <tr>
+                <td>Phones</td>
+                <td>12000</td>
+                <td>01</td>
+            </tr>
+            <tr>
+                <td>Laptops</td>
+                <td>90000</td>
+                <td>02</td>
+            </tr>
+            <tr>
+                <td>Keyboard</td>
+                <td>1000</td>
+                <td>04</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>1100</td>
+                <td>11</td>
+            </tr>
+        </table>
+    </ol>
+</body>
+</html>

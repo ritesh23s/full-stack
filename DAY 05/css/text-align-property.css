@@ -1,0 +1,26 @@
+.note{
+    color: white;
+    background-color: red;
+}
+
+.explaination{
+    background-color: aqua;
+}
+
+h1{
+    text-align: center;
+    /* text-align: right; */
+    /* text-align: justify; */
+}
+
+h2{
+    text-align: right;
+}
+
+h3{
+    text-align: left;
+}
+
+p{
+    text-align: justify;
+}

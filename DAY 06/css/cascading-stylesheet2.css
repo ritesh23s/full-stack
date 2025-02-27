@@ -1,0 +1,26 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+.explaination{
+    background-color: aqua;
+}
+
+.topic{
+    color: blue;
+}
+
+
+/* Cascading Stylesheet */
+h3{
+    background-color: yellow;
+}
+
+/* h3{
+    background-color: blue;
+} */

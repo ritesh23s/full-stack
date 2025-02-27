@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS Part-02</title>
+</head>
+
+<body>
+    <!-- Selectors in CSS -->
+    <h1 class="heading">&star; Selectors in CSS &star;</h1>
+    
+    <!-- Universal-Selector -->
+    <div class="explaination">
+        <h2 class="topic">Explaination Topic:01 &rAarr; Universal-Selector</h2>
+        <span>
+            Here we can select everything in a document with the help of "universal-selector" (*). Like This &rArr;
+        </span>
+        
+        <pre>
+            *{
+                font-family: 'Courier New';
+                background-color: blue;
+                }
+            </pre>
+
+        <div class="note">
+
+        </div>
+    </div>
+    <header>
+        <h1>Quora
+            <button id="login">Log in</button>
+            <button id="signup">Sign up</button>
+        </h1>
+        <div>
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/following">Following</a></li>
+                <li><a href="/answer">Answer</a></li>
+                <li><a href="/spaces">Spaces</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <p>
+            Adam &nbsp;&nbsp;
+            <a class="follow" href="/adam">Follow /abc</a></span>
+        </p>
+        <h3>What is the highest salary for a spacex engineer?</h3>
+        <span>
+            <button class="upvote">+upvote</button>
+            <button>answer</button>
+        </span>
+        
+        
+        <!-- Element-selector -->
+        <div class="explaination">
+            <h2 class="topic">Explaination Topic:02 &rAarr; Element-selector</h2>
+            <span>
+                Here we can select all elements of the same type "H3" with the help of "element-selector" Like This
+                &rArr;
+            </span>
+            
+            <pre>
+                h3{
+                    color: purple;
+                }
+                
+                h1{
+                    color: #b92b27;
+                }
+            </pre>
+            
+            <div class="note">
+                Here we can also select multiple elenemts with a saperat camma "," Like This &rarr;
+                <pre>
+                h3,h1{
+                    color: #b92b27;
+                }
+            </pre>
+            </div>
+        </div>
+        <hr>
+        Bob &nbsp;&nbsp;
+        <a class="follow" href="/bob">Follow xyz</a>
+    </p>
+    <h3 id="myid">What is the syllabus for JEE 2024?</h3>
+    <span>
+        <button class="upvote">+upvote</button>
+        <button>answer</button>
+    </span>
+    <!-- Id-Selector -->
+    <div class="explaination">
+        <h2 class="topic">Explaination Topic:03 &rAarr; Id-Selector</h2>
+        <span>
+            Here we can selects an element based on the value of the element`s id attribute{(h3) ()} with the help
+            of "id-selector" Like This &rArr;
+        </span>
+        
+        <pre>
+            #myid{
+                background-color: chartreuse;
+            }
+            
+            
+            #login{
+                background-color: white;
+            }
+            
+            
+            #signup{
+                background-color: #b92b27;
+                color: white;
+            }            
+        </pre>
+        
+            <div class="note">
+                We give always one "unique id" for one "element".
+            </div>
+        </div>
+        <hr>
+        <p>
+            Catlyn &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/catlyn">Follow pqr</a>
+        </p>
+        <h3>Why is the sky blue?</h3>
+        <span>
+            <button class="myclass, upvote">+upvote</button>
+            <button class="myclass">answer</button>
+        </span>
+        <!-- Class-Selector -->
+        <div class="explaination">
+            <h2 class="topic">Explaination Topic:04 &rAarr; Class-Selector</h2>
+            <span>
+                Here we can selects an element based on their class attribute {"button"(button class="myclass")} with
+                the help of "class-selector". Like This &rArr;
+            </span>
+            
+            <pre>
+                .myclass{
+                    color: white;
+                    background-color: red;
+                }
+                
+                .heading{
+                    color: chartreuse;
+                    text-align: center;
+                }
+                
+                .note{
+                    color: white;
+                    background-color: red;
+                }
+                
+                .explaination{
+                    background-color: aqua;
+                }
+            </pre>
+            <div class="note">
+                we can give "one class" for multiple elements. Like This &rarr;
+                <pre>
+                    < button class="myclass">+upvote < / button>
+                    < button class="myclass">answer < / button>
+                    for this we can write css propertes-
+                    
+                    .myclass{
+                        color: white;
+                        background-color: red;
+                    }
+                    
+                    then css apply on both button (+upvote & answer).
+                    
+                    here another
+                    Here we want to change color of "+upvote botton" so we give every +upvote button class "button class="upvote"".  
+                    .upvote{
+                        background-color: blue;
+                        color: white;
+                    }
+                    
+                </pre>
+            </div>
+        </div>
+        <hr>
+        <div class="descendantselector">
+            <p>
+                Dan &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="follow" href="/dan">Follow pqr</a>
+            </p>
+            <h3>Why is the sky blue?</h3>
+            <span>
+                <button class="upvote">+upvote</button>
+                <button>answer</button>
+            </span> 
+        </div>
+        <!-- Descendant-Selector -->
+        <div class="explaination">
+            <h2 class="topic">Explaination Topic:05 &rAarr; Descendant-Selector</h2>
+            <span>
+                Here we can selects all anchor tag "a" which is inside paragraph. Like This &rArr;
+            </span>
+            <pre>
+                p a{
+                    color: purple;
+                    background-color: yellow;
+                }
+                
+                An another form of use descendant-elector &rarr;
+                
+                .descendantselector p {
+                    background-color: yellowgreen;
+                }
+            </pre>
+            <div class="note">
+                in descendant-elector we can take multiple level for styling like this &rarr;
+                <pre>
+                    nav ul li a {
+                        text-decoration: none;
+                        color: tomato;
+                    }
+                </pre>
+            </div>
+        </div>
+        <hr />
+        <h1 class="heading">&star; Adjacent Sibiling Combinator &star;</h1>
+        <p>
+            Danis &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/dan">Follow pqr</a>
+        </p>
+        <h3>What`s one habit that changed your life?</h3>
+        <span>
+            <button class="upvote">+upvote</button>
+            <button>answer</button>
+        </span>
+        <!-- Adjacent Sibiling Combinator -->
+        <div class="explaination">
+            <h2 class="topic">Explaination of Adjacent Sibiling Combinator</h2>
+            <span>
+                Heading3 that comes immediately after any paragraph. Like &rAarr;
+            </span>
+            <pre>
+                p+h3{
+                    text-decoration: underline;
+                }
+                
+                .upvote+button{
+                    background-color: cornflowerblue;
+                    color: darkblue;
+                }
+            </pre>
+            <div class="note">
+                
+            </div>
+        </div>
+        <hr>
+        <h1 class="heading">&star; Child Combinator &star;</h1>
+        <p>
+            Azam &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/dan">Follow pqr</a>
+        </p>
+        <h3>Is intelligence more important than wisdom?</h3>
+        <span>
+            <button class="upvote">+upvote</button>
+            <button>answer</button>
+        </span>
+        <!-- Child-Combinator(Child Selector) -->
+        <div class="explaination">
+            <h2 class="topic">Explaination of Child Combinator</h2>
+            <span>
+                Here we can selects all buttons which are direct children of spas. Like This &rArr;
+            </span>
+            <pre>
+                div > input {
+                    background-color: darksalmon;
+                }
+            </pre>
+            <div class="note">
+                Child Combinator is always work on direct child relations
+            </div>
+        </div>
+        <hr>
+        <h1 class="heading">&star; Selectors in CSS &star;</h1>
+        <p>
+            Anil &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/dan">Follow pqr</a>
+        </p>
+        <h3>Is love a choice or a feeling?</h3>
+        <span>
+            <button class="upvote">+upvote</button>
+            <button>answer</button>
+        </span>
+        <!-- Attribute-Selector -->
+         <div class="explaination">
+            <h2 class="topic">Explaination Topic:06 &rAarr; Attribute-Selector</h2>
+            <span>
+                Here we can selects elements based on the presence or value of a given attribute {(input type="text") & (input type="password")} with the help of attribute-selector. Like This &rArr;
+            </span>
+            <pre>
+                input[ type="text"]{
+                    color: red;
+                }
+                
+                input[ type="password"]{
+                    color: green;
+                }
+
+
+                Based on persence (input)
+
+                input[type]{
+                    background-color: ghostwhite;
+                }
+
+                for mote attribute selector visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">Click Here..!</a>
+            </pre>
+            <div class="note">
+                
+            </div>
+         </div>
+        <hr>
+
+        <!-- Pseudo Class -->
+        <h1 class="heading">&star; Pseudo Class &star;</h1>
+        <p>&rAarr; A keyword added to a selector that specifies a special state of the selected elements(s).</p>
+        <p>
+            Maxy &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/dan">Follow pqr</a>
+        </p>
+        <h3>Can money really buy happiness?</h3>
+        <span>
+            <button class="upvote">+upvote</button>
+            <button>answer</button>
+        </span>
+        <div class="explaination">
+            <h2 class="topic">Explaination Topic:01 &rAarr; :hover pseudo class.</h2>
+            <span>
+                syntax of ":hover"
+            </span>
+            <pre>
+                button:hover{
+                    background-color: black;
+                    color: white;
+                }
+                
+                after that when we go to the our button by mouse cursor then button "background-color" is getting black & "color" is getting white.
+                
+                Here same with H3 
+                h3:hover{
+                    text-decoration: none;
+                    text-decoration: overline;
+                }
+            </pre>
+            <div class="note">
+                
+            </div>
+
+            <!-- active pseudo class -->
+            <h2 class="topic">Explaination Topic:02 &rAarr; :active pseudo class.</h2>
+            <span>
+                Whenever we clicked the any element then those element get active state. then we getting effect that element with the help of ":active pseudo class". Like This &rAarr; 
+            </span>
+            <pre>
+                button:active{
+                    background-color: hotpink;
+                }
+
+                Here if we clicked the button where used "button:active" after that button "background-color" getting hotpink. 
+                
+                Here same with "p"
+                p:active{
+                    font-weight: bold;
+                    color: green;
+                }
+            </pre>
+            <div class="note">
+                
+            </div>
+
+            <!-- checked pseudo class -->
+            <h2 class="topic">Explaination Topic:03 &rAarr; :checked pseudo class.</h2>
+            <div>
+                <input type="radio" id="yes" name="agreement">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="agreement">
+                <label for="no">No</label>
+            </div>
+            <span>
+
+            </span>
+            <pre>
+                input[type="radio"]:checked + label{
+                    color: red;
+                    font-weight: bold;
+                }
+            </pre>
+            <div class="note">
+                
+            </div>
+
+            <!-- nth-of-type -->
+            <h2 class="topic">Explaination Topic:04 &rAarr; :nth-of-type pseudo class.</h2>
+            <span>
+                syntax of "nth-of-type"
+            </span>     
+            <pre>
+                div:nth-of-type(2n){
+                    background-color: blanchedalmond;
+                }
+
+                after that we see all 2nd div "background-color" is getting blanchedalmond.
+                
+                for explore more nth-of-type visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type">Click Here..!</a>
+            </pre>
+            <div class="note">
+                
+            </div>
+        </div>
+        <hr>
+
+
+        <!-- Pseudo Elements -->
+        <h1 class="heading">&star; Pseudo Elements &star;</h1>
+        <p>&rAarr; A keyword added to a selector that lets you style a "specific past" of the seleted element(s).</p>
+        <p>
+            Harry &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/dan">Follow pqr</a>
+        </p>
+        <h3>What's a lesson you learned too late?</h3>
+        <span>
+            <button class="upvote">+upvote</button>
+            <button>answer</button>
+        </span>
+        <div class="explaination">
+            <!-- ::first-letter -->
+            <h2 class="topic">Explaination Topic:01 &rAarr; ::first-letter pseudo element.</h2>
+            <span>
+                Here we can get effect or css property value in "first letter" of selected element whith the help of "::first-letter" pseudo element. Like This &rArr;
+            </span>
+            <pre>
+                Here if we want to change first letter of "< h1> Quora< /h1>" color then we write css property like this. &rarr;         
+                
+                h1::first-letter{
+                    color: springgreen;
+                }
+            </pre>
+            <div class="note">
+                
+            </div>
+
+            <!-- ::first-line -->
+            <h2 class="topic">Explaination Topic:02 &rAarr; ::first-line pseudo element.</h2>
+            <p class="firstlinepseudoelement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur consectetur repellat magnam necessitatibus illo fugiat praesentium ullam, unde temporibus ut reprehenderit impedit amet id! Fuga dolor mollitia sint aliquid ex ipsam iste sed, laboriosam enim incidunt, harum quae excepturi consequatur dignissimos sunt, magnam perspiciatis quaerat? Odio mollitia ut corporis, exercitationem fugiat, aut totam esse quibusdam maxime repudiandae nesciunt aperiam placeat dolor modi illo inventore praesentium quia!</p>
+            <span>
+                With the help of "::first-line" pseudo element we can get effect in the first line of selected element.(< p class="firstlinepseudoelement>...< /p>). Like This &rArr;
+            </span>
+            <pre>
+                .firstlinepseudoelement::first-line{
+                    color: #b92b27;
+                }
+            </pre>
+            <div class="note">
+                
+            </div>
+
+            <!-- selection pseudo element -->
+            <h2 class="topic">Explaination Topic:03 &rAarr; ::selection pseudo element.</h2>
+            <span>
+                With the help of "::selection" pseudo element we can get effect an any particular porstion (selected area) of our webpage. Like This &rArr;
+            </span>
+            <pre>
+                p::selection{
+                    background-color: rgb(199, 192, 58);
+                }
+            </pre>
+            <div class="note">
+
+            </div>
+        </div>
+        <hr>
+        <p>
+            john &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/dan">Follow pqr</a>
+        </p>
+        <h3>If you could relive one day, which would it be?</h3>
+        <span>
+            <button class="upvote">+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr>
+        <p>
+            Aman &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/dan">Follow pqr</a>
+        </p>
+        <h3>What’s something everyone should experience at least once?</h3>
+        <span>
+            <button class="upvote">+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr>
+        <p>
+            Anuj &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/dan">Follow pqr</a>
+        </p>
+        <h3>How do you know if you’re on the right path?</h3>
+        <span>
+            <button class="upvote">+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr>
+    </main>
+</body>
+
+</html>

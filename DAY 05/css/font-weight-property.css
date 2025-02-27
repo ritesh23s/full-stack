@@ -1,0 +1,21 @@
+.note{
+    color: white;
+    background-color: red;
+}
+
+.explaination{
+    background-color: aqua;
+}
+
+p{
+    /* font-weight: normal; */
+    font-weight: bold;
+    /* font-weight: 100; */
+    /* font-weight: bolder; */
+    /* font-weight: lighter; */
+}
+
+h2{
+    font-weight: normal;
+    /* font-weight: 400; */
+}

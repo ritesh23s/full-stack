@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="htmlfavicon.png" type="image/x-icon">
+    <title>Name-Attribute-in-HTML-Form</title>
+</head>
+
+<body>
+    <h1>Form in HTML</h1>
+    <h2>Name Attribute</h2>
+    <form action="/server">
+        <div>
+            <label for="username">Enter username:</label>
+            <input type="text" id="username" placeholder="username" name="username">
+            <!-- here if we give name="username" then submit our form after that our website url is changed like this --
+             http://127.0.0.1:5500/server?username=ritesh23s -->
+
+            <!-- try to understand -->
+            <!-- befor give name="username" our website url look like -- 
+              http://127.0.0.1:5500/server?
+
+              after give name="username" our website url look like --
+              http://127.0.0.1:5500/server?username=ritesh23s -->
+        </div>
+        <div>
+            <label for="password">Enter password:</label>
+            <input type="password" id="password" placeholder="password">
+        </div>
+        <button type="submit">submit</button>
+    </form> <hr>
+    <h1>Understand The form action=" " work and name attribute</h1>
+    <h2>Create an another form </h2>
+    <!-- here an youtube url where we search apple--- -->
+    <!-- https://www.youtube.com/results?search_query=apple -->
+     <!-- here youtube use name="search_query" -->
+
+      <!-- This is our website url --  
+      http://127.0.0.1:5500/server?username=ritesh23s
+      here we use name="username" -->
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <!-- if here we write name="search_q" or name="anyotherword" then youtube note gate any response they show at the screen "No results found" -->
+        <button>search</button>
+    </form>
+</body>
+
+</html>

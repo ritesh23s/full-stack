@@ -1,0 +1,66 @@
+h1{
+    color: blue;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+.explaination{
+    background-color: aqua;
+}
+
+
+
+/* Text-Decoration-Property */
+
+.text-decoration{
+    text-decoration: underline;
+    /* text-decoration: none; */
+    /* text-decoration: overline; */
+    /* text-decoration: line-through; */
+}
+
+/* .text-decoration{
+    text-decoration: red underline;
+    text-decoration: wavy underline;
+    text-decoration: dashed underline;
+    text-decoration: red dotted line-through;
+} */
+
+
+
+/* Line-Height Property */
+
+.line-height{
+    /* line-height: normal; */
+    line-height: 2.87;
+}
+
+
+
+/* Letter-Spacing Property */
+.letter-spacing{
+    /* letter-spacing: normal; */
+    letter-spacing: 10px;
+}
+
+
+/* Font-Size Property */
+.font-size{
+    font-size: 30px;
+}
+
+.fs{
+    font-size: 15px;
+}
+
+
+
+/* Font-Family Property */
+.font-family{
+    /* font-family: arial; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: avant garde, didot, sans-serif; */
+}

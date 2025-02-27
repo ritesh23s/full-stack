@@ -1,0 +1,25 @@
+/* inheritance work on levele wise  */
+
+/* div{
+    background-color: blue;
+} */
+
+div{
+    background-color: yellow;
+}
+
+/* form{
+    background-color: red;
+} */
+
+input{
+    background-color: inherit;
+}
+
+button{
+    background-color: inherit;
+}
+ 
+/* button:hover{
+    background-color: red;
+} */

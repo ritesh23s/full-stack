@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="htmlfavicon.png" type="image/x-icon">
+    <title>
+        Label,Botton-Element(and-type-attributes-in-button)and-Button-Using-input
+    </title>
+</head>
+
+<body>
+    <h1>Label in HTML</h1>
+    <form action="/action">
+        <label>
+            Enter username:
+            <input type="text" placeholder="username">
+        </label> <br>
+        <label>
+            Enter password:
+            <input type="password" placeholder="password">
+        </label>
+        
+        <!-- Understand Label Classical Approach -->
+        <h1>Label Classical Approach</h1>
+        <div>
+            <label for="username">Enter your username:</label>
+            <input type="text" id="username" placeholder="username">
+        </div>
+        <div>
+            <label for="password">Enter password:</label>
+            <input type="password" id="password" placeholder="password">
+        </div>
+        <div>
+            <label for="age">Enter your age:</label>
+            <input type="number" id="age" placeholder="age">
+        </div>
+
+        <h1>Button Element</h1>
+        <button>submit</button>
+        <h2>Type Attributes in Buttun Element</h2>
+        <!-- Here Ol an li used for create the S.N. for types attributes explainations -->
+        <ol type="1">
+            <li>
+                type="submit"
+                <button type="submit">submit</button>
+            </li>
+            <li>
+                type="button"
+                <button type="button">do something</button>
+            </li>
+            <li>
+                type="reset"
+                <button type="reset">do something</button>
+            </li>
+            <!-- <li>
+                <button type="menu"></button>
+            </li> -->
+        </ol>
+        <h2>Button using input.</h2>
+        <ol type="1">
+            <li>
+                type="button"
+                <input type="button">
+            </li>
+            <li>
+                type="submit"
+                <input type="submit">
+            </li>
+            <li>
+                type="button" and value="Click me"
+                <!-- here we write value = "click me" for display text in our button -->
+                <input type="button" value="Click me">
+            </li>
+        </ol>
+    </form>
+</body>
+
+</html>

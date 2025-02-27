@@ -1,0 +1,63 @@
+.note{
+    color: white;
+    background-color: red;
+}
+
+/* Named color */
+h4{
+    color: orange;
+}
+
+p{
+    color: blue;
+}
+
+
+/* RGB color */
+.red{
+    color: rgb(255, 0, 0);
+    /* here 225 is value of R(red) and 0 is value of G(Green) and 0 is value of B(Blue) */
+}
+
+.green{
+    color: rgb(0, 255, 0);
+}
+
+.blue{
+    color: rgb(0, 0, 255);
+}
+
+.black{
+    color: rgb(0, 0, 0);
+}
+
+.yellow{
+    color: rgb(255, 255, 0);
+}
+
+
+/* Hexadecimal or Hex color  */
+.red1{
+    color: #ff0000;
+    /* here in the hex code (#ff0000) the first two letter repersent value of R(red) then 3rd and 4th letter repersent value of G(Green) then last two letter is repersents value of B(blue). */
+}
+
+.green1{
+    color: #00ff00;
+}
+
+.blue1{
+    color: #0000ff;
+}
+
+.black1{
+    color: #000000;
+}
+
+.yellow1{
+    color: #ffff00;
+}
+
+.another1{
+    color: #ffa511;
+}

@@ -1,0 +1,15 @@
+h2{
+    /* color: rgb(255, 255, 255); */
+    color: #ffffff;
+    background-color: black;
+}
+
+.A{
+    color: rgb(255, 255, 0);
+    /* color: #ffff00; */
+}
+
+.B{
+    /* color: rgb(0, 0, 255); */
+    color: #0000ff;
+}
