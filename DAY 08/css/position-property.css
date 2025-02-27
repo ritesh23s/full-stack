@@ -1,0 +1,71 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.explaination{
+    background-color: aqua;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+.demo{
+    color: #fb1eff;
+    text-align: center;
+}
+
+#forstyling{
+    height: 100px;
+    width: 100px;
+    /* background-color: green; */
+    border: 3px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+
+/* Position-Property */
+/* static */
+.static{
+    background-color: yellow;
+    position: static;
+    top: 500px;
+}
+
+/* relative */
+.relative{
+    background-color: blue;
+    position: relative;
+    top: 60px;
+    left: 15px;
+}
+
+/* absolute */
+.absolute{
+    background-color: red;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+/* fixed */
+.fixed{
+    background-color: greenyellow;
+    position: fixed;
+    top: 100px;
+    right: 200px;
+}

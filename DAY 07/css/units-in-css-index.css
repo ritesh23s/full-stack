@@ -1,0 +1,322 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 30px;
+}
+
+span{
+    color: red;
+    font-size: 18px;
+}
+
+/* ol li {
+    font-size: 30px;
+} */
+
+pre{
+    font-size: 15px;
+}
+
+
+/* this is all about of header */
+nav{
+    background-color: rgb(123, 50, 50);
+    border-radius: 30px;
+}
+
+nav ul{
+    overflow: auto;
+}
+nav ul li{
+    margin: 14px 20px;
+    float: left;
+    list-style: none;
+}
+
+nav ul li a{
+    padding: 5px 5px;
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    float: left;
+    margin: 14px 0px;
+    margin-right: 50px;
+}
+.search{
+    float: right;
+}
+
+.search input{
+    border: solid black 2px;
+    border-radius: 10px;
+    margin: 14px 75px;
+    
+}
+
+/* this is all about of footer */
+footer{
+    margin: 0;
+    padding: 0;
+}
+
+footer p{
+    background-color: rgb(123, 50, 50);
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+}
+
+/* Topic */
+
+/* Size, Position & List */
+
+/* What's wrong with pixels */
+
+/* Relative Lengths */
+
+.note{
+    background-color: red;
+}
+
+.RelativeLengths{
+    background-color: yellowgreen;
+}
+
+/* em */
+.em p{
+    background-color: aqua;
+}
+.em{
+    font-size: 20px;
+}
+
+.embox{
+    background-color: red;
+    font-size: 2em;
+}
+
+
+/* rem */
+.rembox{
+    font-size: 2rem;
+}
+
+/* vw */
+.vw p{
+    background-color: aqua;
+}
+
+.vwbox1{
+    background-color: red;
+    width: 50vw;
+}
+
+.vwbox2{
+    background-color: blue;
+    width: 30vw;
+}
+
+/* vh */
+.vhbox1{
+    background-color: red;
+    width: 50vw;
+    height: 50vh;
+}
+
+.vhbox2{
+    background-color: blue;
+    width: 30vw;
+    height: 30vh;
+}
+
+/* percentage (%) */
+.parentprbox{
+    background-color: aqua;
+    width: 400px;
+}
+.prbox{
+    background-color: blue;
+    width: 50%;
+}
+
+/* min/max-height/width property */
+.minmaxheightwidthproperty{
+    background-color: yellowgreen;
+}
+
+
+/* min-height/width */
+.minheight{
+    background-color: red;
+    width: 400px;
+    /* height: 13vh; */
+    height: 45vh;
+    min-height: 14vh;
+}
+
+
+/* max-height/width */
+.maxheight{
+    background-color: blue;
+    width: 400px;
+    /* height: 40vh; */
+    height: 19vh;
+    max-height: 20vh;
+}
+/* The Position Property */
+.ThePositionProperty{
+    background-color: yellowgreen;
+}
+
+
+/* static position */
+.staticp{
+    text-align: center;
+    border: 2px solid red;
+}
+.static{
+    margin: auto;
+    background-color: aqua;
+    width: 50vw;
+    height: 50vh;
+}
+.staticbox{
+    background-color: violet;
+    height: 200px;
+    width: 200px;
+    position: static;
+    top: 4px;
+}
+
+
+/* relativ position */
+.relativep{
+    text-align: center;
+    border: 2px solid red;
+}
+.relative{
+    margin: auto;
+    background-color: aqua;
+    width: 50vw;
+    height: 50vh;
+}
+.relativebox{
+    background-color: violet;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 10px;
+    left: 215px;
+    /* bottom: 8px; */
+    /* right: 200px; */
+}
+
+/* Absolute property */
+.absolutep{
+    text-align: center;
+    border: 2px solid red;
+}
+.absolute{
+    margin: auto;
+    background-color: aqua;
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+}
+/* .absolutebox1{
+    background-color: violet;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    right: 0px;
+} */
+
+
+/* if we give position "position: relative;" for ".absolute" class, then ".absolutebox1" class is positionet itself respect to ".absolute" class because of ".absolute" class is first none-static member. Like:- */
+
+.absolutebox1{
+    background-color: violet;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 10px;
+    /* top: 22px; */
+    /* bottom: 0px; */
+    /* left: 20px; */
+}
+
+.absolutebox2{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+}
+
+
+/* fixed position */
+/* .fixedp{
+    text-align: center;
+    border: 2px solid red;
+}
+.fixed{
+    margin: auto;
+    background-color: aqua;
+    width: 50vw;
+    height: 50vh;
+}   
+.fixedbox{
+    background-color: violet;
+    height: 200px;
+    width: 200px;
+    position: fixed; 
+    left: 40px;
+    right: 100px;
+} */
+
+.stickyp{
+    text-align: center;
+    border: 2px solid red;
+}
+.sticky{
+    margin: auto;
+    background-color: aqua;
+    border: 2px solid blue;
+    width: 50vw;
+    height: 200vh;
+}   
+.stickybox{
+    background-color: violet;
+    height: 200px;
+    width: 200px;
+    position: sticky;
+    top: 0px;
+}
+
+/* We also set the position property in header like this:- */
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+
+/* List-style property */
+.liststyleproperty{
+    background-color: yellowgreen;
+}   
+
+
+/* Z-index property */
+.zindexproperty{
+    background-color: yellowgreen;
+}

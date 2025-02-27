@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/flex-sizing.css">
+    <title>Flex-Sizing</title>
+</head>
+<body>
+    <h1 class="heading">&star; Flex Sizing &star;</h1>
+    <p>
+        &rAarr; Whith the help of <mark>Flex Sizing</mark> we can <mark>controle the extra space</mark> inside a <mark>flex container (div).</mark> <br>
+        &rAarr; We can easily <mark>Grow & Shrink</mark> our flex items with the help of <mark>Flex Sizing.</mark>
+    </p>
+    <ol>
+        <li>flex-basis: ....;</li>
+        <li>flex-grow: ....;</li>
+        <li>flex-shrink: ....;</li>
+    </ol>
+    
+    <div class="note">
+        Note: Its height & width always depends on "flex-direction:.....;" if,
+            <ol>
+                <li>flex-direction: row;, then our main size = width</li>
+                <li>flex-direction: column;, then our main size = height</li>
+            </ol>
+    </div>
+
+    <!-- Demo of "flex-basis: ....;" -->
+    <h3 class="demo">Demo of "flex-basis: ....;"</h3>
+    <div id="flexbasis">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="flexbasisgreen">green</div>
+        <div id="yellow">yellow</div>
+        <div id="flexbasisorange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- Demo of "flex-grow: ....;" -->
+    <h3 class="demo">Demo of "flex-grow: ....;"</h3>
+    <div id="flexgrow">
+        <div id="flexgrowvoilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="flexgrowyellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- Demo of "flex-shrink: ....;" -->
+    <h3 class="demo">Demo of "flex-shrink: ....;"</h3>
+    <div id="flexshrink">
+        <div id="voilet">vo</div>
+        <div id="indigo">in</div>
+        <div id="flexshrinkblue">bl</div>
+        <div id="green">gr</div>
+        <div id="yellow">ye</div>
+        <div id="orange">or</div>
+        <div id="flexshrinkred">re</div>
+    </div>
+    
+
+    <div class="explaination">
+        <!-- flex-basis: ....; -->
+        <h2 class="topic">Explaination Topic:01 &rAarr; flex-basis: ....;</h2>
+        <span>
+            Its sets the individual main size of a <mark>flex-item</mark>. Like This &rArr;
+        </span>
+        <pre>
+            #flexbasis{
+                height: 600px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            
+            Here we can sets the <mark>main size</mark> (height & width ) of <mark>an andividual flex item</mark> like this &rArr;
+
+            #flexbasisgreen{
+                flex-basis: 150px;
+            }
+            
+            #flexbasisorange{
+                flex-basis: 200px;
+            }
+            
+        </pre>
+        <div class="note">
+                 
+        </div>
+
+        <!-- flex-grow: ....; -->
+        <h2 class="topic">Explaination Topic:02 &rAarr; flex-grow: ....;</h2>
+        <span>
+            It spacifies how moch to the flex container's remaining space should be assigned to the flex item's main size. Like This &rArr;
+        </span>
+        <pre>
+            #flexgrow{
+                height: 600px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            After given these property we have some extra spaces inside my container(parent element). 
+            if we want to <mark>grow our flex item size</mark> then we get the property of our individual flex item. Like This &rArr;
+
+            #flexgrowvoilet{
+                flex-grow: 1;
+            }
+            Here, if we sets the one individual flex item <mark>flex-grow: ...;</mark> then this element grow our size(width) and capture the extra space.
+
+            #flexgrowyellow{
+                flex-grow: 2;
+            }
+
+            Here, if we sets the multiple individual flex item <mark>flex-grow: ...;</mark> then all flex items grow
+            their size (width) and <mark>distribute</mark> the extra space according to given "flex-grow" value. 
+
+            <mark>We can also sets the widht&height Limit. Like This &rArr;</mark>
+            #flexgrowvoilet{
+                max-width: 200px;
+                min-height: 100px;
+            }
+
+            if we sets the size limit (max-width & min-width) these element size <mark>always sets according to given value</mark>.
+        </pre>
+        <div class="note">
+            Note: 
+            <ol>
+                <li>to every individual items grow value is always "flex-grow: 1;"</li>
+                <li>"flex-grow: 1;" here we used unitless value like - 1, 1.5,2, etc</li>
+            </ol>     
+        </div>
+
+        <!-- flex-shrink: ....; -->
+        <h2 class="topic">Explaination Topic:03 &rAarr; flex-shrink: ....;</h2>
+        <span>
+            It sets the flex shrink factor of a flex item. Like This &rArr;
+        </span>
+        <pre>
+            #flexshrink{
+                height: 200px;
+                width: 200px;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;   
+            }
+
+            After sets these property value we have to see that the flex items(child element) is <mark>overflow with their parent element</mark>.
+            so,
+            if we want to decrease our flex items(child element) size of an individual item then use <mark>flex-shrink:....;</mark> Like This &rArr;
+            
+            #flexshrinkblue{
+                flex-shrink: 2;
+            }
+            
+            #fleshrinkgred{
+                flex-shrink: 2;
+            }
+
+            After that size decrease of these individual item according to given value.
+        </pre>
+        <div class="note">
+            Note: "flex-shrink: 1;" is default value.
+        </div>
+    </div>
+</body>
+</html>

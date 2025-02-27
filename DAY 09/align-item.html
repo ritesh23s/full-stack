@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/align-items.css">
+    <title>Align-items, Align-content & Align-self</title>
+</head>
+<body>
+    <h1 class="heading">&star; Align Items &star;</h1>
+    <p>&rAarr; Distributes our items along the <mark>cross-axis</mark>.</p>
+    <ol>
+        <li>align-items: fles-start;</li>
+        <li>align-items: flex-end;</li>
+        <li>align-items: center</li>
+    </ol>
+    <div class="note">
+
+    </div>
+    <!-- align-items: fles-start; -->
+    <h3 class="demo">Demo of "align-items: fles-start;"</h3>
+    <div id="flexstart">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- align-items: fles-end; -->
+    <h3 class="demo">Demo of "align-items: fles-end;"</h3>
+    <div id="flexend">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- align-items: center; -->
+    <h3 class="demo">Demo of "align-items: center;"</h3>
+    <div id="center">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- align-items: baseline; -->
+    <h3 class="demo">Demo of "align-items: baseline;"</h3>
+    <div id="baseline">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="baselineblue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="baselineorange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <div class="explaination">
+        <!-- align-items: fles-start; -->
+        <h2 class="topic">Explaination Topic:01 &rAarr; align-items: fles-start;</h2>
+        <span>
+            With the help of <mark>align-items: flex-start;</mark> we can setrs the flex item position at the <mark>top (start) of the cross-axis.</mark> Like This &rAarr;
+        </span>
+        <pre>
+            #flexstart{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                align-items: flex-start;
+            }
+        </pre>
+        <div class="note">
+            Note: it is default value.
+        </div>
+
+        <!-- align-items: fles-end; -->
+        <h2 class="topic">Explaination Topic:02 &rAarr; align-items: fles-end;</h2>
+        <span>
+            Whith the help of <mark>align-items: flex-end;</mark> we can sets the flex items position at the <mark>bottom (end) of the cross-axis.</mark> Like This &rAarr; 
+        </span>
+        <pre>
+            #flexend{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                align-items: flex-end;
+            }
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <!-- align-items: center; -->
+        <h2 class="topic">Explaination Topic:03 &rAarr; align-items: center;</h2>
+        <span>
+            Whith the help of <mark>align-items: center;</mark> we can sets the flex items position at the <mark>center of the cross-axis.</mark> Like This &rAarr;
+        </span>
+        <pre>
+            #center{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+        </pre>
+        <div class="note">
+
+        </div>
+        
+        <!-- align-items: baseline; -->
+        <h2 class="topic">Explaination Topic:03 &rAarr; align-items: baseline;</h2>
+        <span>
+            Whith the help of <mark>align-items: baseline;</mark> we can sets the flex items content <mark>in a baseline(straigth line).</mark> Like This &rAarr;
+        </span>
+        <pre>
+            #baseline{
+                height: 600px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                align-items: center;
+                align-items: baseline;
+            }
+
+            Here all flex items content sets in a <mark>baseline (straight line).</mark>
+            
+            in another word &rArr;
+            flex items (child div) arranged accordint to <mark>child div content (like - text.)</mark>
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+
+    <h1 class="heading">&star; Align Content &star;</h1>
+    <p>&rAarr; Its sets the distribution of <mark>space between and around</mark> content items along with a flexbox's <mark>cross-axis.</mark></p>
+    <ol>
+        <li>align-content: flex-start/flex-end/center;</li>
+        <li>align-content: space-between/space-around;</li>
+        <li>align-content: baseline;</li>
+    </ol>
+    <div class="note">
+        Note: Its work as "justify-content" but along with cross-axis.
+    </div>
+    <pre>
+        Example &rArr;
+
+        #flexstart{
+            height: 600px;
+            width: 80%;
+            background-color: azure;
+            margin: 10px auto;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-between;
+            align-content: space-around;
+            align-content: baseline;
+            align-content: last baseline;
+            align-content: first baseline;
+        }
+    </pre>
+
+    <h1 class="heading">&star; Align Self &star;</h1>
+    <p>&rAarr; Its align an individual item(flex items/child element) along the <mark>cross-axis.</mark></p>
+    <ol>
+        <li>align-self: flex-start;</li>
+        <li>align-self: flex-end;</li>
+        <li>align-self: flex-center;</li>
+        <li>align-self: baseline;</li>
+    </ol>
+    <div class="note">
+        Note: "align-self" always higher in priority ass compare to "align-items"
+    </div>
+
+    <!-- align-self: flex-start; -->
+    <h3 class="demo">Demo of "align-self: flex-start;"</h3>
+    <div id="alselfflexstart">
+        <div id="alselfflexstartvoilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="alselfflexstartyellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- align-self: flex-end; -->
+    <h3 class="demo">Demo of "align-self: flex-end;"</h3>
+    <div id="alselfflexend">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="alselfflexendgreen">green</div>
+        <div id="yellow">yellow</div>
+        <div id="alselfflexendorange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- align-self: center; -->
+    <h3 class="demo">Demo of "align-self: center;"</h3>
+    <div id="alselfcenter">
+        <div id="voilet">voilet</div>
+        <div id="alselfcenterindigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="alselfcenterred">red</div>
+    </div>
+
+    <!-- align-self: baseline; -->
+    <h3 class="demo">Demo of "align-self: baseline;"</h3>
+    <div id="alselfbaseline">
+        <div id="alselfbaselinevoilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="alselfbaselineblue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- explaination -->
+    <div class="explaination">
+
+        <!-- align-self: flex-start; -->
+        <h2 class="topic">Explaination Topic:01 &rAarr; align-self: flex-start;</h2>
+        <span>
+            Its sets an individual flex item position at the <mark>top (start) along with cross-axis</mark>. Like This &rAarr;
+        </span>
+        <pre>
+            #alselfflexstart{
+                height: 600px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            Here we have already defined the "align-items: center;" so all
+            <mark>flex items position sets center at the cross-asix</mark> but i want to
+            sets an individual flex item position <mark>at the top(start) of cross-asix</mark> so we can definef it. Like This &rArr;
+            
+            #alselfflexstartyellow{
+                align-self: flex-start;
+            }
+            
+            #alselfflexstartvoilet{
+                align-self: flex-start;
+            }
+
+            Then sets the individual flex item position at <mark>the start along with cross-axis.</mark>
+        </pre>
+        <div class="note">
+            Note
+        </div>
+
+        <!-- align-self: flex-end; -->
+        <h2 class="topic">Explaination Topic:02 &rAarr; align-self: flex-end;</h2>
+        <span>
+            Its sets an individual flex item position at the <mark>bottom (end) along with cross-axis</mark>. Like This &rAarr;
+        </span>
+        <pre>
+            #alselfflexend{
+                height: 600px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            Here we have already defined the "align-items: center;" so all
+            <mark>flex items position sets center at the cross-asix</mark> but i want to
+            sets an individual flex item position <mark>at the bottom(end) of cross-asix</mark> so we can definef it. Like This &rArr;
+            
+            #alselfflexendgreen{
+                align-self: flex-end;
+            }
+            
+            #alselfflexendorange{
+                align-self: flex-end;
+            }
+
+            Then sets the individual flex item position at <mark>the end along with cross-axis.</mark>
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <!-- align-self: center; -->
+        <h2 class="topic">Explaination Topic:03 &rAarr; align-self: center;</h2>
+        <span>
+            Its sets an individual flex item position at the <mark> center along with cross-axis</mark>. Like This &rAarr;
+        </span>
+        <pre>
+            #alselfcenter{
+                height: 600px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            Here we have already defined the "align-items: flex-star;" so all
+            <mark>flex items position sets start (top) at the cross-asix</mark> but i want to
+            sets an individual flex item position <mark>at the center of cross-asix</mark> so we can definef it. Like This &rArr;
+            
+            #alselfcenterindigo{
+                align-self: center;
+            }
+            
+            #alselfcenterred{
+                align-self: center;
+            }
+
+            Then sets the individual flex item position at <mark>the center along with cross-axis.</mark>
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <!-- align-self: baseline; -->
+        <h2 class="topic">Explaination Topic:04 &rAarr; align-self: baseline;</h2>
+        <span>
+            Its sets an individual flex item position at the <mark> baseline along with cross-axis</mark>. Like This &rAarr;
+        </span>
+        <pre>
+            #alselfbaseline{
+                height: 600px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            Here we have already defined the "align-items: center;" so all
+            <mark>flex items position sets start (top) at the cross-asix</mark> but i want to
+            sets an individual flex item position <mark>at the baseline of cross-asix</mark> so we can definef it. Like This &rArr;
+            
+            #alselfbaselineblue{
+                align-self: baseline;
+            }
+            
+            #alselfbaselinevoilet{
+                align-self: baseline;
+            }
+
+            Then sets the individual flex item position at <mark> the baseline along with cross-axis.</mark>
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+</body>
+</html>

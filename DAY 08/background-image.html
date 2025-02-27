@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/background-image.css">
+    <title>Background-Image</title>
+</head>
+<body>
+    <h1 class="heading">&star; Background Image &star;</h1>
+    <p>&rAarr; With the help of "background-image" we can sets an image as a background.</p>
+    <div class="contain" id="shadow">
+        <h1 class="bgimg">background-size: contain;</h1>
+        <li>Image don't scale</li>
+        <li>Image don't crop</li>
+        <li>Image repeat for the filing the area</li>
+    </div>
+    <div class="cover" id="shadow">
+        <h1 class="bgimg">background-size: cover;</h1>
+        <li>Image don't scale</li>
+        <li>Image crop</li>
+    </div>
+    <div class="auto" id="shadow">
+        <h1 class="bgimg">background-size: auto;</h1>
+        <li>Image is streched for filing areaa</li>
+    </div>
+    <div class="explaination">
+        <!-- background-size: contain; -->
+        <h2 class="topic">Explaination Topioc:01 &rAarr; background-size: contain;</h2>
+        <span>
+            we can sets the background-size like this &rArr;
+        </span>
+        <pre>
+            .contain{
+                height: 200px;
+                width: 400px;
+                background-image: url(bg5.jpg);
+                background-size: contain;
+            }
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <!-- cover -->
+        <h2 class="topic">Explaination Topioc:02 &rAarr; background-size: cover;</h2>
+        <span>
+            we can sets the background-size like this &rArr;
+        </span>
+        <pre>
+            .contain{
+                height: 200px;
+                width: 400px;
+                background-image: url(bg5.jpg);
+                background-size: cover;
+            }
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <!-- auto -->
+        <h2 class="topic">Explaination Topioc:03 &rAarr; background-size: auto;</h2>
+        <span>
+            we can sets the background-size like this &rArr;
+        </span>
+        <pre>
+            .contain{
+                height: 200px;
+                width: 400px;
+                background-image: url(bg5.jpg);
+                background-size: auto;
+            }
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+</body>
+</html>

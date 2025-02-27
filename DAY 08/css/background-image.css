@@ -1,0 +1,61 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.explaination{
+    background-color: aqua;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+#shadow{
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.bgimg{
+    background-color: rgb(255, 0, 0, 0.3);
+}
+
+li{
+    color: blue;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+/* background-image */
+/* contain */
+.contain{
+    height: 200px;
+    width: 400px;
+    background-image: url(bg5.jpg);
+    background-size: contain;
+}
+
+/* cover */
+.cover{
+    height: 200px;
+    width: 400px;
+    background-image: url(bg5.jpg);
+    background-size: cover;
+}
+
+/* auto */
+.auto{
+    height: 200px;
+    width: 400px;
+    background-image: url(bg5.jpg);
+    background-size: auto;
+}

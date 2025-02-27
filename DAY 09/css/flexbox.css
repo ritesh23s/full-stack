@@ -1,0 +1,125 @@
+.demo{
+    color: #fb1eff;
+    text-align: center;
+}
+
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.explaination{
+    background-color: aqua;
+}
+
+.headingexplain{
+    color: crimson;
+    text-align: center;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+#highlight{
+    background-color: yellow;
+}
+
+#voilet{
+    background-color: #9400d3;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 300px;
+    font-size: 1.5em;
+}
+
+#indigo{
+    background-color: #4b0082;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 300px;
+    font-size: 1.5em;
+}
+
+#blue{
+    background-color: #0000ff;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 300px;
+    font-size: 1.5em;
+}
+
+#green{
+    background-color: #00ff00;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 300px;
+    font-size: 1.5em;
+}
+
+#yellow{
+    background-color: #ffff00;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 300px;
+    font-size: 1.5em;
+}
+
+#orange{
+    background-color: #ff7f00;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 300px;
+    font-size: 1.5em;
+}
+
+#red{
+    background-color: #ff0000;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 300px;
+    font-size: 1.5em;
+}
+
+/* FlexBox */
+/* Flexbox Direction */
+/* flex-direction: row; & (flex-direction: row-revers;) */
+#rowandrowreverse{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+}
+
+
+/* flex-direction: column; & "flex-direction: column-revers;" */
+#columnandcolumnreverse{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+}

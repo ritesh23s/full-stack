@@ -1,0 +1,120 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.explaination{
+    background-color: aqua;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+section{
+    margin-top: 100px;
+}
+
+.transformdiv{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7aa874;
+    border: 2px solid black;
+    margin: 10px auto;
+    /* margin: 0 auto; */
+}
+
+.transformdiv:nth-of-type(2n){
+    background-color: #f7db6a;
+}
+
+.transformdiv:nth-of-type(3n){
+    background-color: #ebb02d;
+}
+
+/* CSS Transform */
+/* rotate */
+#one{
+    transform: rotate(45deg);
+    /* transform: rotate(180deg); */
+    /* transform: rotate(-45deg); */
+}
+
+
+/* Scale */
+#two{
+    /* transform: scale(1.5); */
+    transform: scale(0.5);
+}
+
+/* #two{
+    transform: scale(0.5,1.5);
+} */
+
+/* #two{
+    transform: scaleX(2);
+} */
+
+/* #two{
+    transform: scaleY(1.5);
+} */
+
+/* #two{
+    transform: scaleZ(3);
+} */
+
+
+
+/* Translate */
+#three{
+    transform: translate(100px, 100px);
+}
+
+/* #three{
+    transform: translateX(50px);
+} */
+
+/* #three{
+    transform: translateY(30px);
+} */
+
+
+/* Skew */
+#four{
+    /* transform: skew(30deg); */
+    transform: skew(-30deg);
+}
+
+/* #four{
+    transform: skewX(50deg);
+} */
+
+/* #four{
+    transform: skewY(35deg);
+} */
+
+
+/* Here we can sets multiple transformation for an element */
+#five{
+    transform: rotate(20deg) translateX(10px) skew(12deg) scaleY(1.05);
+}
+
+
+
+/* Box Shadow */
+.boxshadow{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    box-shadow: 2px 2.5px 10px black;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/position-property.css">
+    <title>Position-Property</title>
+</head>
+<body>
+    <h1 class="heading">&star; Position Property &star;</h1>
+    <p>&rAarr; The position CSS property sets how an element is positioned in a document <br> The <span id="yellow">top</span>, <span id="yellow">right</span>, <span id="yellow">bottom</span>, and <span id="yellow">left</span> properties determine the final location of positioned elements.</p>
+    <p>&rAarr; in another word we can sets the any particular element position in our overall document.</p>
+    <ol>
+        <li>Static</li>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+    </ol>
+
+    <section>
+        <h3 class="demo">Static Demo</h3>
+        <div id="forstyling">
+
+        </div>
+        <div class="static" id="forstyling">
+            
+        </div>
+    </section>
+    <section>
+        <h3 class="demo">Relative Demo</h3>
+        <div id="forstyling">
+
+        </div>
+        <div class="relative" id="forstyling">
+            
+        </div>
+        <div id="forstyling">
+            
+        </div>
+    </section>
+    <section>
+        <h3 class="demo">Absolute Demo</h3>
+        <div id="forstyling">
+
+        </div>
+        <div class="absolute" id="forstyling">
+            
+        </div>
+
+        <!-- Here absolute say that for positioned element which have position: absolute; not created extra space -->
+        <div id="forstyling">
+            
+        </div>
+    </section>
+    <section>
+        <h3 class="demo">Fixed Demo</h3>
+        <div id="forstyling">
+
+        </div>
+        <div class="fixed" id="forstyling">
+            fixed
+        </div>
+    </section>
+
+    <!-- Position-Property -->
+    <div class="explaination">
+        <!-- Positoin : Static -->
+        <h2 class="topic">Explaination Topic:01 &rAarr; Positoin : Static</h2>
+        <span>
+            The top, right, bottom, left, and z-index properties have no effect. <br>
+            This is the default value. Sets the position Like This &rArr;
+        </span>
+        <pre>
+            .static{
+                background-color: yellow;
+                position: static; 
+                top: 500px; // determine final position along with "top"
+            }
+
+            Here we determine the final position "top: 500px;" <br>
+            but here we can't see any effect because of "position: static;" <br>
+            and static position is default.
+        </pre>
+        <div class="note">
+            Note: static position is default position.
+        </div>
+       
+        <!-- Positoin : Relative -->
+        <h2 class="topic">Explaination Topic:02 &rAarr; Positoin : Relative</h2>
+        <span>
+            The offset(determined position like - top: 100px;, left: 200px; etc.) is <span id="yellow">relative to itself</span> based on the values of top, right, bottom, and left. Like This &rArr;
+        </span>
+        <pre>
+            .relative{
+                background-color: blue;
+                position: relative;
+                top: 60px; //determined final position along with itself "top: 60px;"
+                left: 15px; //determined final position along with itself "left: 15px;"
+            }
+
+        </pre>
+        <div class="note">
+            Note: The relative position Positionate along with itself.
+        </div>
+
+        <h2 class="topic">Explaination Topic:03 &rAarr; Position: Absolute</h2>
+        <span>
+            The element is removed from the normal document flow, and no space is created for the element in the page layout. <br>
+            It is positioned <span id="yellow">relative to its closet positioned ancestor</span>, if amy; athorwise, it is placed relative to the initial containing block. Like This &rArr;
+        </span>
+        <pre>
+            .absolute{
+                background-color: red;
+                position: absolute;
+                top: 150px;
+                left: 200px;
+            }
+        </pre>
+        <div class="note">
+            Note: 
+            <ol>
+                <li>if we don't sets any position (except "static position") of the parent element (section) then the child element is positioned along with overall document.</li>
+                <li> if we sets the position of parent element then child element is positioned along with their parent element.</li>
+                <li>Conclusion: In absolute position element positioned along with their closer element which have already given position except "static position"</li>
+                <li>Here absolute say that for positioned element which have position: absolute; not created extra space</li>
+            </ol>
+        </div>
+
+        <!-- Position: Fixed -->
+        <h2 class="topic">Explaination Topic:04 &rAarr; Position: Fixed</h2>
+        <span>
+            The element is removed from the normal document flow, and no space is created for the element in the page layout. <br>
+            It is positioned <span id="yellow">relative to the initial block</span> established by the viewport. Like This &rArr;
+            
+        </span>
+        <pre>
+            .fixed{
+                background-color: greenyellow;
+                position: fixed;
+                top: 100px;
+                right: 200px;
+            }
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+</body>
+</html>

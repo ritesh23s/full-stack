@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/units-in-css-index.css">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <title>CSS units</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    Logo...
+                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://ritesh23s.github.io/portfolio/" target="_blank">Contact</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Services</a></li>
+
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search Here...">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Size, Position & List -->
+        <h1>Size, Position & List</h1>
+        <h2>There are more unts for discribing size other than "px" <br>
+            There are following:- rem, em, vw, vh, percentages etc.</h2>
+
+        <!-- What's wrong with pixels -->
+        <h1>What's wrong with pixels (px) ..? </h1>
+        <h2>Pixles are relative to the viewing device. <br>
+            For a device with size 1920 * 1080, 1px is one unit out of 1080/1920.</h2>
+
+        <!-- Relative Lengths -->
+        <h1>Relative Lengths</h1>
+        <h2>These units are relative to the other length property. <br>
+            Following are some of the most commonly used relative lengths:- </h2>
+        <section class="RelativeLengths">
+
+            <!-- em -->
+            <h2>1. em &RightArrow; Unit relative to the parent size <span>em means "my parent element's font
+                    size".</span></h2>
+            <div class="em">
+                <p>em unit</p>
+                <pre>
+                    .em{
+                        font-size: 20px;
+                    }
+
+                    <span>Here we give font size in px "font size: 20px;" for parent (.em class)</span>
+                </pre>
+                <div class="embox">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veritatis, rerum earum at
+                    pariatur deserunt repellendus, illum est nesciunt distinctio aspernatur laborum labore vitae
+                    voluptatibus. Non a, excepturi vitae laudantium ratione reiciendis.
+                </div>
+                <pre>
+
+                    .embox{
+                        background: red;
+                        font-size: 2em;
+                    }
+                    <span>Here we give font size in em "font size: 2em;" for child class (.embox)</span>
+
+                    <span>em means "parent font size * How many em?" like:- </span> 
+
+                    .em{
+                        font-size: 20px;
+                    }
+                    and
+                    .embox{
+                        background: red;
+                        font-size: 2em;
+                    } 
+
+                    <span>thats means the size of .embox class (child class) is 20px * 2em = 40px.</span> 
+                </pre>
+                <div class="note"> Note - em unit mostly used whenener we want to resize font size corresponding to an
+                    element (div,h1,span,etc) </div>
+            </div>
+
+            <!-- rem  -->
+            <h2>2. rem &rightarrow; unit relative to the root font size (< HTML> tag). <span>rem always depend on HTML
+                        element font size</span> </h2>
+            <div class="rem">
+                <p>it is similar to em unit but it always depend on HTML element font size</p>
+                <div class="rembox">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo commodi ducimus vel tenetur
+                    inventore quam maxime cumque quo, iste aliquid sequi adipisci minus odio libero!
+                </div>
+
+                <pre>
+                    .rembox{
+                        font-size: 2rem;
+                    }
+                    
+                    <span>rem means "HTML element font size * How many rem?" Like:-</span>
+
+                    Here HTML element fond size is 16px (which is default) and given rem unit is -
+                    .rembox{
+                        font-size: 2rem;
+                    }
+                    <span>that means the size of .rembox class is 16px * 2rem = 32px.</span> 
+                </pre>
+
+                <div class="note"> Note - em unit mostly used whenener we want to resize overall page font size
+                    corresponding to only HTML element </div>
+            </div>
+
+            <!-- vw -->
+            <h2>3. vw &rightarrow; Unit relative to the 1% viewport width.</h2>
+            <div class="vw">
+                <h1>vw unit totaly depend on user screen width size like:-</h1>
+                <div class="vwbox1">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur explicabo nisi aspernatur
+                    deleniti unde aperiam neque esse maiores modi, sequi officia tenetur earum numquam asperiores
+                    laudantium debitis doloremque saepe corporis iure, est in laborum! Ipsa labore ut omnis inventore
+                    consequatur maxime. Tempore nam commodi vel.
+                </div>
+                <pre>
+                    .vwbox1{
+                        background-color: red;
+                        width: 50vw;
+                    }
+                    
+                    Here we give .vwbox1 class "width: 50vw;"
+                    <span>50vw means the size of .vwbox1 class is 50 viewport width(50%) of user device screen width.
+                    {no matter user device(monitor,LED,Phone,etc.)screen width size }.</span>
+                </pre>
+                <div class="vwbox2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus rerum dolorem illum, earum quis
+                    corrupti ducimus fugit excepturi. Nihil beatae ratione minima itaque, dolor, excepturi qui cum ex ea
+                    dolore, illo officiis porro repudiandae. Odio autem aliquid ab vitae explicabo molestias dolore
+                    iusto mollitia totam?
+                </div>
+                <pre>
+                    .vwbox2{
+                        background-color: blue;
+                        width: 30vw;
+                    }
+                    
+                    Here we give .vwbox2 class "width: 50vw;"
+                    <span>30vw means the size of .vwbox2 class is 30 viewport width(30%) of user device screen width.
+                    {no matter user device(monitor,LED,Phone,etc.)screen width size }.</span>
+                </pre>
+            </div>
+            <h2>4. vh &rightarrow; Unite relative to the 1% viewport height.</h2>
+            <div class="vh">
+                <h1>vh unitsimilar to vw unit it`s totaly depend on user screen height size like:-</h1>
+                <div class="vhbox1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cum, blanditiis amet aspernatur
+                    explicabo fugit sint ab. Reprehenderit dicta magni quis eaque distinctio, fugiat, blanditiis
+                    mollitia aut ea facere, ex tenetur officiis at dolorum. Modi.
+                </div>
+                <pre>
+                    .vhbox1{
+                        background-color: red;
+                        width: 50vw;
+                        height: 50vh;
+                    }
+
+                    Here we give .vhbox1 class "width: 50vw;" and "height:50vh"
+                    <span>50vh means the size of .vhbox1 class is 50 viewport heigtht(50%) of user device screen height.
+                    {no matter user device(monitor,LED,Phone,etc.)screen height size }.</span>
+                </pre>
+                <div class="vhbox2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cum, blanditiis amet aspernatur
+                    explicabo fugit sint ab. Reprehenderit dicta magni quis eaque distinctio, fugiat, blanditiis
+                    mollitia aut ea facere, ex tenetur officiis at dolorum. Modi.
+                </div>
+                <pre>
+                    .vhbox2{
+                        background-color: blue;
+                        width: 30vw;
+                        height: 30vh;
+                    }  
+                    Here we give .vhbox2 class "width: 30vw;" and "height:30vh"
+                    <span>30vh means the size of .vhbox2 class is 30 viewport heigtht(30%) of user device screen height.
+                    {no matter user device(monitor,LED,Phone,etc.)screen height size }.</span>
+                </div>
+            </pre>
+                <h2>5. percentage (%) &rightarrow; Unit relative to the parent element width/height.</h2>
+                <div class="percentage">
+                    <h1>percentage (%)</h1>
+                    <p>It`s relative to the parent element width/height (it is totally depends on parent width/height)
+                    </p>
+                    <div class="parentprbox">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae pariatur, vel magni laudantium,
+                        earum amet ratione impedit fugit error a corporis illo quo? Consequatur, hic? Odit esse quidem
+                        rem alias! Incidunt assumenda velit fugit praesentium!
+                        <pre>
+                        .parentprbox{
+                            background-color: aqua;
+                            width: 400px;
+                        }
+                        Here we give "width:400px;" for parent class ".parentprbox" 
+                    </pre>
+                        <div class="prbox">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, numquam explicabo quas
+                            sapiente ex vero vitae nemo cum cumque, doloribus quisquam voluptates saepe deleniti ut
+                            dolorem. Recusandae saepe, temporibus officiis sunt mollitia illum nisi ipsa.
+                        </div>
+                        <pre>
+                        .prbox{
+                            background-color: blue;
+                            width: 50%;
+                        }
+                        Here we give "width: 50%;" for child class ".prbox"
+                        <span>Here "width: 50%;" means = the width of child (.prbox) class is 50% of parent class (.parentprbox)</span>
+                    </pre>
+                    </div>
+                </div>
+        </section>
+
+        <!-- min/max-height/width property -->
+        <h1>min/max-height/width property</h1>
+        <section class="minmaxheightwidthproperty">
+            <h2>CSS has a min-height, max-heigt. min-width, and max-width property.</h2>
+            <h2>If the content is smaller than the minimum heigtht, then minimun height will be applied, similar is the
+                case with other related properties</h2>
+            <h1>min-height/width = we define the minimun height/width of a particular element Like:- </h1>
+            <div class="minheight">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et modi porro cum deserunt in, adipisci, ipsam
+                quo autem recusandae odio, repellat distinctio esse deleniti! Totam ullam cumque commodi aperiam tempora
+                eius laborum necessitatibus iure debitis?
+            </div>
+            <pre>
+                .minheight{
+                    background-color: red;
+                    width: 400px;
+                    /* height: 13vh; */
+                    height: 45vh;
+                    min-height: 14vh;
+                }
+                Here we already define "min-height: 14vh;" of .minheight class
+                <span>If we again set min-height < 14vh; then element height not set.
+                 because of we have already defined "min-height: 14vh;" of the element </span>
+            </pre>
+            <div class="note">Note - Same goes for min-width.</div>
+
+            <div class="maxheight">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dolor odio fugiat tenetur unde.
+                Repudiandae voluptate perspiciatis aperiam corrupti molestiae perferendis quos architecto itaque odit,
+                optio recusandae? Voluptatem, iusto dolores ea doloribus vitae voluptas quasi!
+            </div>
+            <pre>
+                .maxheight{
+                    background-color: blue;
+                    width: 400px;
+                    /* height: 40vh; */
+                    height: 19vh;
+                    max-height: 20vh;
+                }
+                Here we already define "max-height: 20vh;" of .maxheight class
+                <span>If we again set max-height > 20vh; then element height not set.
+                    because of we have already defined "max-height: 20vh;" of the element </span>
+                </pre>
+            <div class="note">Note - Same goes for max-width.</div>
+        </section>
+
+        <!-- The Position Property -->
+        <h1>The Position Property</h1>
+        <h2>Used to manupulate the location of an element. Following are the posible values: </h2>
+        <section class="ThePositionProperty">
+
+            <!-- static position -->
+            <h1>Static &rightarrow; The default position- top/bottom/left/right/z-index has no effect.</h1>
+            <div class="static">
+                <p class="staticp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi molestias repellat
+                    laboriosam perferendis quam ducimus autem illo officia tempora. Assumenda.</p>
+                <div class="staticbox">
+                    I AM A BOX
+                </div>
+            </div>
+            <pre>
+                .staticbox{
+                    background-color: violet;
+                    height: 200px;
+                    width: 200px;
+                    position: static;
+                    top: 4px;
+                }
+                Here if we give "position: static;" then position property not work
+                <span>because of static position property is default.</span>
+            </pre>
+
+            <!-- relativ position -->
+            <h1>Relative &rightarrow; The top/bottom/left/right/z-index will now work otherwise the element is in the
+                flow of doucoment like static.</h1>
+            <div class="relative">
+                <p class="relativep">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi molestias
+                    repellat laboriosam perferendis quam ducimus autem illo officia tempora. Assumenda.</p>
+                <div class="relativebox">
+                    I AM A BOX
+                </div>
+            </div>
+            <pre>
+                .relativebox{
+                    background-color: violet;
+                    height: 200px;
+                    width: 200px;
+                    position: relative;
+                    top: 10px;
+                    left: 215px;
+                    /* bottom: 8px; */
+                    /* right: 200px; */
+                }
+                Here we give "position: relative;" and set the position
+                top: 10px;
+                left: 215px
+                
+                then,
+                <span>.relativebox class position is changed corresponding to given value (top/right/bottom/right)</span>
+            </pre>
+
+            <!-- Absolute property -->
+            <h1>Absolute &rightarrow; The element is removed from the flow & is relatively positioned to it's first
+                non-static ancestor - top/bottom etc works.</h1>
+            <div class="absolute">
+                <p class="absolutep">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi molestias
+                    repellat laboriosam perferendis quam ducimus autem illo officia tempora. Assumenda.</p>
+                <div class="absolutebox1">
+                    I AM A BOX
+                </div>
+                <div class="absolutebox2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt rem animi laudantium assumenda
+                    tempora eum unde? Asperiores similique minima unde!s
+                </div>
+                
+            </div>
+            <pre>
+                <span>"position: absolute;" always positionet with respect to their first none static member</span>
+                
+                .absolutebox1{
+                    background-color: violet;
+                    height: 200px;
+                    width: 200px;
+                    position: absolute;
+                }
+                <span>
+                    Here if we set the position "left: 0px;" for ".absolutebox1" class, 
+                    then it is positionet itself respect to our first none static member. like:-
+                </span>
+                .absolutebox1{
+                    background-color: violet;
+                    height: 200px;
+                    width: 200px;
+                    position: absolute;
+                    left: 0px;
+                    /* right: 0px; */
+                    /* top: 0px; */
+                    /* right: 0px; */
+                }
+                <span>
+                    if we give position "position: relative;" for ".absolute" class,
+                    then ".absolutebox1" class is positionet itself respect to ".absolute" class,
+                    because of ".absolute" class is first none-static member. Like:-
+                </span>
+                .absolutebox1{
+                    background-color: violet;
+                    width: 200px;
+                    height: 200px;
+                    position: absolute;
+                    right: 10px;
+                    /* top: 22px; */
+                    /* bottom: 0px; */
+                    /* left: 20px; */
+                }
+                <span>
+                    Here ".absolutebox1" class positionet itself with respect to ".absolute" class.
+                </span>
+            </pre>
+
+            <!-- <h1>Fixed &rightarrow; Just like absolute except the element is positioned relative to the browser window.
+            </h1>
+            <div class="fixed">
+                <p class="fixedp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi molestias
+                    repellat laboriosam perferendis quam ducimus autem illo officia tempora. Assumenda.</p>
+                <div class="fixedbox">
+                    I AM A BOX
+                </div>
+            </div> -->
+            
+            <h1>Sticky &rightarrow; The element is positioned based on user's scroll position</h1>
+            <div class="sticky">
+                <p class="stickyp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi molestias
+                    repellat laboriosam perferendis quam ducimus autem illo officia tempora. Assumenda.</p>
+                <div class="stickybox">
+                    I AM A BOX
+                </div>
+            </div>
+            <pre>
+                .stickybox{
+                    background-color: violet;
+                    height: 200px;
+                    width: 200px;
+                    position: sticky;
+                    top: 0px;
+                }
+                <span>
+                Here we set position "position: sticky;" for ".stickybox" class and set the value "top: 0px;"
+                after that our "stickybox" div positionet sticky. (based on user's scroll position) 
+                </span>
+            </pre>
+            <div class="note">
+                We also set the position property in header like this:-
+            </div>
+
+            <pre>
+                header{
+                    position: sticky;
+                    top: 0px;
+                } 
+            </pre>
+        </section>
+
+        <!-- List-style property -->
+        <h1>List-style property</h1>
+        <h2>The list style property is a shorthand for type, position & image.</h2>
+        <section class="liststyleproperty">
+            <pre>
+                ul{
+                    list-style: square inside url(/img/cpu.jpg);
+                }
+
+                <span>Where:</span> <pre>
+                    square &rightarrow; List-Style-Type
+                    Inside &rightarrow; List-Style-Position 
+                    cpu.jpg &RightArrow; List-Style-image
+                </pre>
+            </pre>
+        </section>
+
+        <!-- Z-index property -->
+        <h1>Z - index property</h1>
+        <h2>z-index property specifies the stack order of an element.</h2>
+        <section class="zindexproperty">
+            <h2>It define which layer will be above which in case overlapping elements.</h2>
+            <img src="/img/zindex.png" width="120px" height="130px" alt="zindex">
+            <span>Z &rightarrow; Third demension.</span>
+            <pre>
+                
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; ShuBh.com</p>
+    </footer>
+</body>
+
+</html>

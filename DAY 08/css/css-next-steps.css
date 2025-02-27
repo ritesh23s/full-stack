@@ -1,0 +1,36 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.explaination{
+    background-color: aqua;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+/* Alpha Channel */
+.alphachannel{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* Opacity */
+.opacity{
+    height: 200px;
+    width: 200px;
+    background-color: #ffa511;
+    opacity: 0.5;
+}

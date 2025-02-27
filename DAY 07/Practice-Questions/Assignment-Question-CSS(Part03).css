@@ -1,0 +1,49 @@
+/* Q1. Create a box using div. set  */
+    /* - Its height to 150px width 130px and background-color to grey.
+    - Border to a 5px, black, dotted border.
+    - A top margin of 20px
+    - A right margin of 1em
+    - A bottom margin of 40px
+    - A left margin of 2em
+    - Padding on all sides of 1em. */
+#box{
+    height: 150px;
+    width: 130px;
+    background-color: grey;
+    border: 5px dotted black;
+    margin-top: 20px;
+    margin-right: 1em;
+    margin-bottom: 40px;
+    margin-left: 2em;
+    padding: 1em;
+}
+
+/* Q2. Create 3 divs with the following properties */
+    /* - Height & width of 100px
+    - Background- color to pink
+    - Border to 2px solid black 
+    - make this div in the shape of circle
+    - place all the 3 div in a single line */
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Q3. Create a list of technologies - HTML, CSS, JavaScript, NodeJS, ReactJS, SQL, MongoDB, Java, C++, C  & Python */
+    /* - Now change the display of all list items to inline to move them all in a single line.
+    - Did you notice something different? Try to find why the bullet points disappear. */
+
+ul li{
+    display: inline;
+}
+
+/* 
+Li (list items) have their display property set to “list-item” by default which 
+makes them a bulleted list item. 
+When this property is reset by you to “inline”, then the bullet points also 
+disappear. In a way, we override the default settings with our CSS.  */

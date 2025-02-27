@@ -1,0 +1,35 @@
+/* Question - Recreate the following elements using given css:
+1. Create a div & 3 sibling divs inside it
+2. For the outer div set following styling 
+    height 200px, width 70px and border as 2px solid black color
+3. For the inner divs set following styling.
+    height 50px, width 50px and border as 2px solid black color, also set a margin of 10px
+    make inner divs circular in sape & given them individual colors(red,yellow,green) */
+
+
+.outerdiv{
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+}
+
+.innerdiv{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+    /* Here we give "border-radius" for make i8nner divs in circular shape */
+}
+
+#red{
+    background-color: red;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#green{
+    background-color: green;
+}

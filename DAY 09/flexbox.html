@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <title>FlexBox</title>
+</head>
+<body>
+    <h1 class="heading">&star; FlexBox &star;</h1>
+    <p>
+        &rAarr; <span id="highlight">Flexible Box Layout is called flexbox.</span> <br>
+        &rAarr; It is a one-demensional layout method for arranging items in rows or colums. <br>
+        &rAarr; Flexbox help us to make a respinsive website layout. 
+    </p>
+    
+    <h1 class="heading">&star; Flex Direction &star;</h1>
+    <!-- Demo of "flex-direction: row;" & (flex-direction: row-revers;) -->
+    <h3 class="demo">Demo of "flex-direction: row;" & "flex-direction: row-revers;"</h3>
+    <div id="rowandrowreverse">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- Demo of "flex-direction: column;" & "flex-direction: column-revers;" -->
+    <h3 class="demo">Demo of "flex-direction: column;" & "flex-direction: column-revers;"</h3>
+    <div id="columnandcolumnreverse">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+    <div class="explaination">
+        <!-- Flexbox Direction -->
+        <h1 class="headingexplain">&star; Flexbox Direction &star;</h1>
+        <p>
+            &rAarr; It sets <span id="highlight">how flex items are placed</span> in the flex container, along which axis and direction. Like This &rArr;
+        </p>
+        <ol>
+            <li>flex-direction: row; (main axis, left to right)</li>
+            <li>flex-direction: row-reverse; (main axis, right to left)</li>
+            <li>flex-direction: colomn; (cross axis, top to bottom)</li>
+            <li>flex-direction: column-reverse; (cross axis, bottom to top)</li>
+        </ol>
+
+        <div class="note">
+            Note: 
+            <ol>
+                <li>"flex-direction" is by default sets "row" always.</li>
+                <li>flex-deretion ignore the given width of child element when given width is overflow. its sets with according to itself(parent element)</li>
+            </ol>
+        </div>
+
+        <!-- flex-direction: row; -->
+        <h2 class="topic">Explaination Topic:01 &rAarr; flex-direction: row; (main axis, left to right)</h2>
+        <span>
+            With the help of flex-direction: row; we can sets the <span id="highlight">flex item</span> direction. Like This &rArr;
+        </span>
+        <pre>
+            #rowandrowreverse{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+            }
+            Here if we can sets "flex-direction: row;" then flex item direction sets <span id="highlight">"row wise"</span>
+        </pre>
+        <div class="note">
+            Note: flex-deretion: row; is default flex direction
+        </div>
+
+        <!-- flex-direction: row-reverse; (main axis, right to left) -->
+         <h2 class="topic">Explaination Topic:02 &rAarr; flex-direction: row-reverse; (main axis, right to left)</h2>
+         <span>
+            With the help of "flex-direction: row-reverse;" we can sets the <span id="highlight">flex item</span> direction. Like This &rArr;
+         </span>
+         <pre>
+            #rowandrowreverse{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            
+            Here if we can sets the "flex-direction: row-reverse;" then flex item direction sets row wise but <span id="highlight">reverse way.(right to left)</span>
+         </pre>
+         <div class="note">
+
+         </div>
+
+        <!-- flex-direction: column; -->
+        <h2 class="topic">Explaination Topic:03 &rAarr; flex-direction: colomn; (cross axis, top to bottom)</h2>
+        <span>
+            With the help of "flex-direction: column;" we can sets the <span id="highlight">flex item</span> direction. Like This &rArr;
+        </span>
+        <pre>
+            #columnandcolumnreverse{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: column;
+            }
+
+            Here is we can sets "flex-direction: column;" then flex items direction sets <span id="highlight">column wise.</span>
+        </pre>
+        <div class="note">
+            
+        </div>
+
+        <!-- flex-direction: column-reverse; -->
+        <h2 class="topic">Explaination Topic:04 &rAarr; flex-direction: colomn-reverse; (cross axis, bottom to top)</h2>
+        <span>
+            With the help of "flex-direction: column-reverse;" we can sets the <span id="highlight">flex item</span> direction. Like This &rArr;
+        </span>
+        <pre>
+            #columnandcolumnreverse{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px;
+                border: 2px solid black;
+                display: flex;
+                /* flex-direction: column; */
+                flex-direction: column-reverse;
+            }
+
+            Here is we can sets "flex-direction: column;" then flex items direction sets column wise but <span id="highlight">reverse way. (bottom to top)</span>
+        </pre>
+        <div class="note">
+
+        </div>
+
+    </div>
+</body>
+</html> 

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/units-in-css(Relative units).css">
+    <title>Units-in-CSS(Relative Units)</title>
+</head>
+<body>
+    <h1 class="heading">&star; Units in CSS &star;</h1>
+    <p>&rAarr; Here we talk about some most commonly used "Relative Units" </p>
+    <table border="black">
+        <tr>
+            <th>Absolute</th>
+            <th>Relative</th>
+        </tr>
+        <tr>
+            <td>px</td>
+            <td>%</td>
+        </tr>
+        <tr>
+            <td>pt</td>
+            <td>em</td>
+        </tr>
+        <tr>
+            <td>pc</td>
+            <td>rem</td>
+        </tr>
+        <tr>
+            <td>cm</td>
+            <td>ch</td>
+        </tr>
+        <tr>
+            <td>mm</td>
+            <td>vh</td>
+        </tr>
+        <tr>
+            <td>in</td>
+            <td>vw + many more</td>
+        </tr>
+    </table>
+
+    <h2>Heading</h2>
+    <div class="outer">
+        <div class="inner">
+
+        </div>
+    </div>
+
+    <div class="outerem">
+        This is outer
+        <div class="innerem">
+            This is inner
+        </div>
+    </div>
+    
+    <button>Click Me</button>
+
+    <!-- Drawback of em -->
+     <section>
+        section
+        <div id="nesteddiv">
+            div1
+            <div id="nesteddiv">
+                div2
+                <div id="nesteddiv">
+                    div3
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <div class="explaination">
+
+        <!-- Percentages (%) -->
+        <h3 class="topic">Explaination Topic:01 &rAarr; Percentages (%)</h2>
+        <span>
+            It is often used to define a "size as relative to an element" object.
+            Example: &rArr;
+            <pre>
+                width: 33.33% // relative to the parent.
+                margin-left: 50% // relative to the parent size.
+            </pre>
+        </span>
+        <pre>
+            Here we want to sets "H1" width according to his parent (< body>) so we sets like this &rarr;
+            h2{
+                border: 2px solid black;
+                width: 33.33%;
+            }
+
+            Here another example with the help of "margin property" Like &rAarr;
+            Here we sets the ".outer" margin: 50px;
+            .outer{
+                height: 400px;
+                width: 400px;
+                background-color: pink;
+                margin: 50px;
+            }
+
+            now we want to sets the "margin" of ".inner" according to his parent ".outer" size so we can sets like this &rArr;
+            .inner{
+                height: 100px;
+                width: 100px;
+                background-color: cornflowerblue;
+                margin-left: 10%;
+            }
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <!-- Em -->
+        <h3 class="topic">Explaination Topic:02 &rAarr; Em</h3>
+        <table border="black">
+            <tr>
+                <th>Unit</th>
+                <th>Relative to</th>
+            </tr>
+            <tr>
+                <td>em</td>
+                <td>Font size of the parent, in the case of typographical properties like: "font-size", and font size of the element itsels, in the case of other properties like "width"</td>
+            </tr>
+        </table>
+        <span>
+            &rAarr; "em" used to sets relative to parent size(text-related properties or another properties).
+        </span>
+        <pre>
+
+            Example - 01
+
+            Here if we sets "font-size" of the parent div (.outerem) then &rarr;
+            .outerem{
+                height: 400px;
+                width: 400px;
+                border: 2px solid black;
+                background-color: pink;
+                font-size: 20px;
+            }
+
+            Now, here we want to sets "font-size" of ".innerem" relative (according) to parent (.outerem) then &rarr;
+
+            .innerem{
+                height: 100px;
+                width: 100px;
+                background-color: cornflowerblue;
+                font-size: 1.5em;
+            }
+
+            here ".innerem" font-size sets relative (according) to parent(.outerem) font-size(20px), Here final font-size of (.innerem) = 20px * 1.5em = 30px.
+
+            Example - 02
+
+            Here we can controle our padding according to "font-size" Like This &rArr;
+
+            button{
+                font-size: 10px;
+                border: 5px solid green;
+                border-radius: 15px;
+                /* padding: 0 20px 0 20px; */
+                padding: 0 1em 0 1em;
+            }
+
+            Here we sets padding-left & padding-right = 1em, Then now,
+            if font-size increase then padding automatically increase
+            according to "font-size".
+        </pre>
+
+        <!-- Drawback of em -->
+        <h4 class="subtopic">Subtopic: &rAarr; Drawback of em</h4>
+        <span>
+            Snowball effect in nested elements
+        </span>
+        <pre>
+            Example - 
+
+            section{
+                font-size: 15px;
+            }
+
+            #nesteddiv{
+                font-size: 1.5em;
+            }
+
+            Here if we sets "font-size" of #nesteddiv = 1.5em then only "div1" changed our font size according to "section"
+            otherwise all #nesteddiv changed our font size according(relative) to each other. Like &rarr; div1 < div2 < div3
+            Means #nesteddiv note changed our size according to "section"
+        </pre>
+        <div class="note">
+            Note: for avoide em drawback we need to another unite that called "rem" (Root em)
+        </div>
+
+        <!-- rem (Root em) -->
+         <h3 class="topic">Explaination Topic:03 &rAarr; Rem (Root Em)</h3>
+         <table border="black">
+            <tr>
+                <th>Unit</th>
+                <th>Relative to</th>
+            </tr>
+            <tr>
+                <td>rem</td>
+                <td>Font size of root element</td>
+            </tr>
+        </table>
+        <span>
+            &rAarr; "rem" used to sets size according to root element (in nested elements)
+        </span>
+        <pre>
+            Example -
+
+            section{
+                font-size: 15px;
+            }
+            
+            #nesteddiv{
+                font-size: 1.5rem;
+            }
+
+            Here if we sets "font-size" of #nesteddiv = 1.5rem then all divs sets our
+            "font-size" according(Relative) to root element (section) "font-size".
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+</body>
+</html>

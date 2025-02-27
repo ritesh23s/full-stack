@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/flex-wrap.css">
+    <title>Flex Wrap</title>
+</head>
+<body>
+    <h1 class="heading">&star; Flex Wrap &star;</h1>
+    <p>&rAarr; Sets whether "flex items" are <span id="highlight">forced onto one line or can wrap (overflow)</span> onto multiple lines</p>
+    <ol>
+        <li>flex-wrap: nowrap;</li>
+        <li>flex-wrap: wrap;</li>
+        <li>flex-wrap: wrap-reverse;</li>
+    </ol>
+    <div class="note">
+
+    </div>
+
+    <!-- Demo of "flex-wrap: nowrap;" -->
+    <h3 class="demo">Demo of "flex-wrap: nowrap;"</h3>
+    <div id="nowrap">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- Demo of "flex-wrap: wrap; -->
+    <h3 class="demo">Demo of "flex-wrap: wrap;"</h3>
+    <div id="wrap">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- flex-wrap: wrap-reverse; -->
+    <h3 class="demo">Demo of "flex-wrap: wrap-reverse;"</h3>
+    <div id="wrapreverse">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- Explaination -->
+     <div class="explaination">
+
+        <!-- flex-wrap: nowrap; -->
+        <h2 class="topic">Explaination Topic:01 &rAarr; flex-wrap: nowrap;</h2>
+        <span>
+            nowrap is default "flex-wrap" sets Like This &rAarr;
+        </span>
+        <pre>
+            #nowrap{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+            }
+
+            Here we sets "flex-wrap: nowrap;" then no see any effect because of <span id="highlight">nowrap is default.</span> 
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <!-- flex-wrap: wrap; -->
+        <h2 class="topic">Explaination Topic:02 &rAarr; flex-wrap: wrap;</h2>
+        <span>
+            With the help of <span id="highlight">"flex-wrap: wrap;"</span> we can sets the actual height and widh of child element which is already we have to desides. Like This &rArr;
+        </span>
+        <pre>
+            #wrap{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            Here we already deside the child element <span id="highlight">width = 300px;</span> but without sets <span id="highlight">"flex-wrap: wrap;"</span> child
+            element don't sets their actual width which have already desided. 
+            after sets <span id="highlight">"flex-wrap: wrap;"</span> the child element <span id="highlight">take their actual width</span> which is already defined.
+        </pre>
+        <div class="note">
+
+        </div>
+         
+        <!-- flex-wrap: wrap-reverse; -->
+        <h2 class="topic">Explaination Topic:03 &rAarr; flex-wrap: wrap-reverse;</h2>
+        <span>
+            With the help of <span id="highlight">"flex-wrap: wrap-reverse;"</span> we can sets the actual height and widh of child element which is already we have to defined. <br> and it's actualy <span id="highlight">reverse the direction along with cross-axis. </span> Like This &rArr;
+        </span>
+        <pre>
+            #wrapreverse{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap-reverse;
+            }
+
+            Here we already deside the child element <span id="highlight">width = 300px;</span> but without sets <span id="highlight">"flex-wrap: wrap;"</span> child
+            element don't sets their actual width which have already desided. 
+            after sets <span id="highlight">"flex-wrap: wrap;"</span> the child element <span id="highlight">take their actual width</span> which is already defined.
+            <span id="highlight">and "wrap-reverse" actualy reverse the direction of flex items along with cross-axis.</span>
+        </pre>
+        <div class="note">
+            Note: "wrap-reverse" actualy reverse the direction of flex items along with cross-axis. 
+        </div>
+     </div>
+</body>
+</html>

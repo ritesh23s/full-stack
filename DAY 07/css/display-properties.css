@@ -1,0 +1,70 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.explaination{
+    background-color: aqua;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+/* table styling */
+.yellow{
+    background-color: yellow;
+}
+
+
+/* Display */
+/* we already know that h2 is a block element. */
+h2{
+    display: inline;
+}
+
+.spn{
+    display: block;
+}
+
+
+/* display:inline; */
+/* #display{
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline;
+} */
+
+
+/* display:block */
+/* #display{
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 5px;
+    display: block;
+} */
+
+
+/* display: inline-block; */
+#display{
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+}

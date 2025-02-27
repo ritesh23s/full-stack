@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/justify-content.css">
+    <title>Justify-Content</title>
+</head>
+<body>
+    <h1 class="heading">&star; Justify Content &star;</h1>
+    <p>
+        &rAarr; It's tells how the browser <span id="highlight">distributes space</span>  between and aroundcontenet items along with the main-axis.
+    </p>
+    <ol>
+        <li>justify-content: flex-start;</li>
+        <li>justify-content: flex-end;</li>
+        <li>justify-content: center;</li>
+        <li>justify-content: space-between;(space-around, space-evenly)</li>
+    </ol>
+
+    <div class="note">
+        Note: justify-content always depends on flex-direction Like &rArr;
+        <ol>
+            <li>flex-deretion: row, row-revers;</li>
+            <li>flex-deretion: column, column-revers;</li>
+        </ol>
+    </div>
+
+    <!-- Demo of "justify-content: flex-start;" -->
+    <h3 class="demo">Demo of "justify-content: flex-start;"</h3>
+    <div id="flexstart">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+    
+    <!-- Demo of "justify-content: flex-end;" -->
+    <h3 class="demo">Demo of "justify-content: flex-end;"</h3>
+    <div id="flexend">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+    
+    <!-- Demo of "justify-content: center;" -->
+    <h3 class="demo">Demo of "justify-content: center;"</h3>
+    <div id="center">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- "justify-content: space-between;(space-around, space-evenly)" -->
+    <h3 class="demo">Demo of "justify-content: space-between;(space-around, space-evenly)"</h3>
+    <div id="spacebetwwenaroundevenly">
+        <div id="voilet">voilet</div>
+        <div id="indigo">indigo</div>
+        <div id="blue">blue</div>
+        <div id="green">green</div>
+        <div id="yellow">yellow</div>
+        <div id="orange">orange</div>
+        <div id="red">red</div>
+    </div>
+
+    <!-- explaination -->
+    <div class="explaination">
+        <!-- justify-content: flex-start; -->
+        <h2 class="topic">Explaination Topic:01 &rAarr; justify-content: flex-start;</h2>
+        <span>
+            With the help of <span id="highlight">"justify-content: flex-start;"</span>
+            we can sets space between "flex items" Like This &rArr; 
+        </span>
+        <pre>
+            #flexstart{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;    
+                justify-content: flex-start ;
+            }
+
+            Here if we sets "jtjustify-content: flex-start;" then all flex items go to <span id="highlight">main-axis start.</span> 
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <!-- justify-content: flex-end; -->
+        <h2 class="topic">Explaination Topic:02 &rAarr; justify-content: flex-end;</h2>
+        <span>
+            With the help of <span id="highlight">"justify-content: flex-end;"</span>
+            we can sets space between "flex items" Like This &rArr;
+        </span>
+        <pre>
+            #flexend{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;    
+                justify-content: flex-end;
+            }
+
+            Here if we sets " justify-content: flex-end" then all flex items arranged at the <span id="highlight">end of main-axis.</span>
+        </pre>
+        <div class="note">
+
+        </div>
+        
+        <!-- justify-content: center; -->
+        <h2 class="topic">Explaination Topic:03 &rAarr; justify-content: center;</h2>
+        <span>
+            With the help of <span id="highlight">"justify-content: center;"</span>
+            we can sets space between "flex items" Like This &rArr;
+        </span>
+        <pre>
+            #center{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;    
+                justify-content: center;
+            }
+
+            Here if we sets " justify-content: center" then all flex items arrange <span id="highlight">at the center of main-axis</span>
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <h2 class="topic">Explaination Topic:04 &rAarr; justify-content: space-between;(space-around, spae-evenly)</h2>
+        <span>
+            With the help of <span id="highlight">"justify-content: space-between;(space-around, space-evenly)"</span>
+            we can sets space between "flex items" Like This &rArr;
+        </span>
+        <pre>
+            #spacebetwwenaroundevenly{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;    
+                justify-content: space-between;
+            }
+
+            Here if we sets " justify-content: space-between" then all flex items create <span id="highlight">space(extra spaace) between them</span>
+
+            #spacebetwwenaroundevenly{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;    
+                justify-content: space-around;
+            }
+
+            Here if we sets " justify-content: space-around" then all flex items create <span id="highlight">space(extra space) around them</span>
+
+            #spacebetwwenaroundevenly{
+                height: 300px;
+                width: 80%;
+                background-color: azure;
+                margin: 10px auto;
+                border: 2px solid black;
+                display: flex;   
+                justify-content: space-evenly;
+            }
+
+            Here if we sets " justify-content: space-evenly" then all flex items create <span id="highlight">space(extra space) evenly.</span>
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+</body>
+</html>

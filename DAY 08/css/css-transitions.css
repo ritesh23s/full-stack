@@ -1,0 +1,52 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.explaination{
+    background-color: aqua;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+/* Transitions Duration  & Transition Delay*/
+.transitions{
+    height: 200px;
+    width: 200px;
+    background-color: #4dff00ff;
+    transition-duration: 1s;
+    transition-delay: 1.5s;
+}
+
+.transitions:hover{
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+/* Transition Timing Function */
+.timingfunction{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin-top: 10px;
+    margin: 0 auto;
+    transition: margin-top 2s ease-in 0.2s;
+}
+
+.timingfunction:hover{
+    margin-top: 400px;
+    background-color: blue  ;
+    /* border-radius: 50%; */
+}

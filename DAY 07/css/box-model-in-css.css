@@ -1,0 +1,192 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.explaination{
+    background-color: aqua;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+
+/* Box-Model-in-CSS */
+/* Height */
+.box-model{
+    height: 100px;
+}
+
+/* Width */
+.box-model{
+    width: 600px;
+    background-color: pink;
+}
+
+/* Border */
+.box-model{
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+}
+
+/* Border Shorthand */
+/* .box-model{
+    border: 5px solid blue;
+} */
+
+
+/* border-width */
+/* There are advance type of sets "border-width" */
+/* .box-model{
+    border-style: solid;
+    border-top-width: 5px;
+    border-left-width: 10px;
+    border-right-width: 15px;
+    border-bottom-width: 20px;
+} */
+
+
+
+/* border style */
+/* Diffrent typs of border style */
+h1{
+    border-width: 2px;
+    border-style: dashed;
+    border-color: red;
+    /* border-style: solid;
+    border-style: dotted;
+    border-style: double;
+    border-style: groove;
+    border-style: hidden; */
+}
+
+/* h1{
+    border-width: 5px;
+    border-color: red;
+    border-left-style: dashed;
+    border-right-style: double;
+    border-top-style:dotted;
+    border-bottom-style: groove;
+} */
+
+
+/* border-color */
+/* There are advance type of sets "border-color" */
+/* .box-model{
+    border-style: solid;
+    border-top-color: red;
+    border-right-color: orangered;
+    border-left-color: yellow;
+    border-bottom-color: yellowgreen;
+} */
+
+    
+
+/* Border Radius */
+button{
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+/* advance type of sets "border-radius" */
+.box-model{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 45px;
+}
+
+
+
+/* Padding */
+.box-model{
+    padding: 50px;
+}
+
+
+/* advance(padding sides) type of sets "padding" */
+/* .box-model{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 30px;
+} */
+
+/* button{
+    background-color: yellow;
+    padding-left: 25px;
+    padding-right: 25px;
+} */
+
+
+/* Padding Shorthand */
+/* #1. for all 4 sides */
+/* .box-model{
+    padding: 50px;
+} */
+
+/* #2. for top & bottom | left & right */
+/* .box-model{
+    padding: 1px 2px;
+} */
+
+/* #3. for top|left & right|bottom */
+/* .box-model{
+    padding: 1px 2px 3px;
+} */
+
+/* #4. for top|right|bottom|left  (Clockwise) */
+/* .box-model{
+    padding: 1px 2px 3px 4px;
+} */
+
+
+/* Margin */
+.box-model{
+    margin: 50px;
+}
+
+
+/* advance(margin sides) type of sets "margin" */
+/* .box-model{
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+} */
+
+
+/* Margin Shorthand */
+/* #1. for all 4 sides */
+/* .box-model{
+    margin: 50px;
+} */
+
+/* #2. for top & bottom | left & right */
+/* .box-model{
+    margin: 1px 2px;
+} */
+
+
+/* #3. for top|left & right|bottom */
+/* .box-model{
+    margin: 1px 2px 3px;
+} */
+
+
+/* #4. for top|right|bottom|left  (Clockwise) */
+/* .box-model{
+    margin: 1px 2px 3px 4px;
+} */
+

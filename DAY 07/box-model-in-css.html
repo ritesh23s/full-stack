@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/box-model-in-css.css">
+  <title>Box-Model-in-CSS</title>
+</head>
+<body>
+  <h1 class="heading">&star; Box Model In CSS &star;</h1>
+  <h2>Random Heading</h2>
+  <div class="box-model">
+    Now is the winter of our discontent Made glorious summer by this sun of
+    York; And all the clouds that lour'd upon our house In the deep bosom of
+    the ocean buried. Now are our brows bound with victorious wreaths; Our
+    bruised arms hung up for monuments; Our stern alarums changed to merry
+    meetings, Our dreadful marches to delightful measures. Grim-visaged war
+    hath smooth'd his wrinkled front;
+  </div>
+  <div class="box-model">
+    And now, instead of mounting barded steeds To fright the souls of fearful
+    adversaries, He capers nimbly in a lady's chamber To the lascivious
+    pleasing of a lute. But I, that am not shaped for sportive tricks, Nor
+    made to court an amorous looking-glass; I, that am rudely stamp'd, and
+    want love's majesty To strut before a wanton ambling nymph; I, that am
+    curtail'd of this fair proportion,
+  </div>
+  <button>Click me</button>
+  <div class="explaination">
+
+    <!-- Height -->
+    <h2 class="topic">Explaination Topic:01 &rAarr; Height </h2>
+    <span>
+      By default it sets the "content area height" of the element. Like This &rArr;
+    </span>
+    <pre>
+      .box-model{
+        height: 200px;
+      }
+    </pre>
+    <div class="note">
+        Note: Height always set only for "content" not for overall elemtnt.
+    </div>
+
+    <!-- Width -->
+    <h2 class="topic">Explaination Topic:02 &rAarr; Width</h2>
+    <span>
+      By default, it sets the "content area width" of the element. Like This &rArr;
+    </span>
+    <pre>
+      .box-model{
+        width: 600px;
+      }
+    </pre>
+    <div class="note">
+      
+    </div>
+
+    <!-- Border -->
+    <h2 class="topic">Explaination Topic:03 &rAarr; Border</h2>
+    <span>
+      Used to set an element's border. There are diffrent type of border properties.
+      <ol type="1">
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+        <!-- <li>border-radius</li> -->
+      </ol>
+
+      Explaination &rArr;
+    </span>
+    <pre>
+      .box-model{
+        border-width: 5px;
+        border-style: solid;
+        border-color: blue;
+      }
+
+      <!-- Border Shorthand -->
+      <h3 class="subtopic">Explaination Subtopic: &rAarr; Border Shorthand </h3>
+      <span>&rAarr; Here we can also give the all properties in one line. Like this &rarr; </span>
+      
+      .box-model{
+        border: 5px solid blue;
+      }  
+      
+      
+      <!-- Border width -->
+      <!-- There are advance type of sets "border-width" -->
+    <h3 class="subtopic">Explaination Subtopic:01 &rAarr; Border width</h3>  
+    <span>&rAarr; There are advance type of sets "border-width" Like This &rarr;</span>
+   
+    .box-model{
+      border-style: solid;
+      border-top-width: 5px;
+      border-left-width: 10px;
+      border-right-width: 15px;
+      border-bottom-width: 20px;
+    }
+    
+
+    <!-- Border Style -->
+    <h3 class="subtopic">Explaination Subtopic:02 &rAarr; Border Style </h3>
+    <span>&rAarr; There are different typs of "border-style" Like This &rarr; </span>
+    
+    h1{
+      border-width: 2px;
+      border-style: solid;
+      border-style: dashed;
+      border-style: dotted;
+      border-style: double;
+      border-style: groove;
+      border-style: hidden;
+      border-color: red;
+    }
+    
+
+    <span>&rAarr; There are advance type of sets "border-style" Like This &rarr; </span>
+
+    h1{
+      border-width: 5px;
+      border-color: red;
+      border-left-style: dashed;
+      border-right-style: double;
+      border-top-style:dotted;
+      border-bottom-style: groove;
+    }
+    
+    <!-- Border Color -->
+    <h3 class="subtopic">Explaination Subtopic:03 &rAarr; Border Color </h3>
+    <span>&rAarr; There are advance type of sets "border-color" Like This &rarr; </span>
+    
+    .box-model{
+      border-style: solid;
+      border-top-color: red;
+      border-right-color: orangered;
+      border-left-color: yellow;
+      border-bottom-color: yellowgreen;
+    }
+    
+    
+  </pre>
+  <div class="note">
+    
+  </div>
+  
+  <h2 class="topic">Explaination SubTopic: of Border: &rAarr; Border Radius</h2>
+  <span>
+    Used to "round the corners" of an element's outer border edges. Like This &rArr;
+  </span>
+  <pre>
+    button{
+        border: 2px solid red;
+        border-radius: 10px;
+    }
+
+
+    <span>&rAarr; There are advance type of sets "border-radius" Like This &rarr; </span>
+    .box-model{
+      border-top-left-radius: 15px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 35px;
+      border-bottom-left-radius: 45px;
+    }
+    
+    for more "border-radius" please visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius">Click Here..!</a>
+  </pre>
+  
+  <div class="note">
+    
+  </div>
+  
+  <!-- Padding -->
+  <h2 class="topic">Explaination Topic:04 &rAarr; Padding</h2>
+  <span>
+    Sets the padding of an element. Like This &rArr;
+  </span>
+  <pre>
+    .box-model{
+      padding: 50px;
+    }
+
+
+    <span>&rAarr; There are advance(padding sides) type of sets "padding" Like This &rarr; </span>
+    
+    .box-model{
+      padding-top: 20px;
+      padding-bottom: 15px;
+      padding-left: 25px;
+      padding-right: 30px;
+    }
+
+    button{
+      background-color: yellow;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    <!-- Padding Shorthand -->
+    <h3 class="subtopic">Explaination Subtopic: &rAarr; Padding Shorthand</h3>
+    <span>#1. for all 4 sides &rArr;</span>
+    
+    .box-model{
+      padding: 50px;
+    }
+    
+
+    <span>#2. for top & bottom | left & right &rArr;</span>
+    
+    .box-model{
+      padding: 1px 2px;
+    }
+    
+    <span>#3. for top|left & right|bottom &rArr;</span>
+    
+    .box-model{
+      padding: 1px 2px 3px;
+    }
+    
+    <span>#4. for top|right|bottom|left  (Clockwise) &rArr;</span>
+    
+    .box-model{
+      padding: 1px 2px 3px 4px;
+    }
+  </pre>
+
+  <div class="note">
+
+  </div>
+  
+  <!-- Margin -->
+  <h2 class="topic">Explaination Topic:05 &rAarr; Margin</h2>
+  <span>
+    To set spacing on the "outside" of border. Like This &rArr;
+  </span>
+
+  <pre>
+    .box-model{
+      margin: 50px;
+    }
+
+    <span>&rAarr; There are advance(margin sides) type of sets "margin" Like This &rarr; </span>
+    
+    .box-model{
+      margin-left: 5px;
+      margin-right: 10px;
+      margin-top: 20px;
+      margin-bottom: 25px;
+    }
+
+    <h3 class="subtopic">Explaination Subtopic: &rAarr; Margin Shorthand</h3>
+    <span>#1. for all 4 sides &rArr;</span>
+    
+    .box-model{
+      margin: 50px;
+    }
+    
+
+    <span>#2. for top & bottom | left & right &rArr;</span>
+    
+    .box-model{
+      margin: 1px 2px;
+    }
+    
+    <span>#3. for top|left & right|bottom &rArr;</span>
+    
+    .box-model{
+      margin: 1px 2px 3px;
+    }
+    
+    <span>#4. for top|right|bottom|left  (Clockwise) &rArr;</span>
+    
+    .box-model{
+      margin: 1px 2px 3px 4px;
+    }
+  </pre>
+
+  <div class="note">
+    
+  </div>
+  </div>
+
+  <span>made by &hearts; shubh</span>
+</body>
+</html>

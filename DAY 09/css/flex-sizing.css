@@ -1,0 +1,210 @@
+.demo{
+    color: #fb1eff;
+    text-align: center;
+}
+
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.explaination{
+    background-color: aqua;
+}
+
+.headingexplain{
+    color: crimson;
+    text-align: center;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+#highlight{
+    background-color: yellow;
+}
+
+#voilet{
+    background-color: #9400d3;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 80px;
+}
+
+#flexgrowvoilet{
+    background-color: #9400d3;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 80px;
+}
+
+#indigo{
+    background-color: #4b0082;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 80px;
+}
+
+#blue{
+    background-color: #0000ff;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 80px;
+}
+
+#flexshrinkblue{
+    background-color: #0000ff;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 80px;
+}
+
+#green{
+    background-color: #00ff00;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 80px;
+}
+
+#flexbasisgreen{
+    background-color: #00ff00;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 80px;
+}
+
+#yellow{
+    background-color: #ffff00;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 80px;
+}
+
+#flexgrowyellow{
+    background-color: #ffff00;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 80px;
+}
+
+#orange{
+    background-color: #ff7f00;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 80px;
+}
+
+#flexbasisorange{
+    background-color: #ff7f00;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 80px;
+}
+
+#red{
+    background-color: #ff0000;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 80px;
+}
+
+#flexshrinkred{
+    background-color: #ff0000;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 80px;
+}
+
+/* Flex Sizing */
+/* flex-basis: ....; */
+#flexbasis{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#flexbasisgreen{
+    flex-basis: 150px;
+}
+
+#flexbasisorange{
+    flex-basis: 200px;
+}
+
+
+/* flex-grow: ....; */
+#flexgrow{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#flexgrowvoilet{
+    flex-grow: 1;
+}
+
+#flexgrowyellow{
+    flex-grow: 2;
+}
+
+/* we can sets the widht&height Limit */
+/* #flexgrowvoilet{
+    max-width: 200px;
+    min-height: 100px;
+} */
+
+/* flex-shrink */
+#flexshrink{
+    height: 200px;
+    width: 200px;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;   
+}
+
+#flexshrinkblue{
+    flex-shrink: 2;
+}
+
+#flexshrinkred{
+    flex-shrink: 2;
+}

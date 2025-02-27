@@ -1,0 +1,63 @@
+.face{
+    height: 400px;
+    width: 400px;
+    background-color: #ffa511;
+    border-radius: 50%;
+    box-shadow: 2px 3px 10px black;
+    transition: 1.5s;
+    /* margin: 0 auto; */
+}
+
+.face:hover{
+    box-shadow: 4px 6px 20px black;
+}
+
+.lefteye{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    box-shadow: 2px 3px 10px white;
+    transition: 1.5s;
+}
+
+.righteye{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    box-shadow: 2px 3px 10px white;
+    transition: 1.5s;
+}
+
+.righteye:hover{
+    box-shadow: 4px 6px 15px red;
+}
+
+.lefteye:hover{
+    box-shadow: 4px 6px 15px red;
+}
+
+.mouth{
+    background-color: brown;
+    width: 200px;
+    height: 75px;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    box-shadow: 2px 2px 10px black;
+    transition: 1.5s;
+}
+
+.mouth:hover{
+    box-shadow: 4px 4px 15px black;
+}

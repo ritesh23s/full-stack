@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/css-transform.css">
+    <title>CSS-Transform</title>
+</head>
+<body>
+    <section>
+        <div id="one" class="transformdiv">1</div>
+        <div id="two" class="transformdiv">2</div>
+        <div id="three" class="transformdiv">3</div>
+        <div id="four" class="transformdiv">4</div>
+        <div id="five" class="transformdiv">5</div>
+    </section>
+    <h1 class="heading">&star; CSS Transform &star;</h1>
+    <p>&rAarr; This property lets you "rotate, scale, skew, or translate" an element</p>
+    <div class="explaination">
+        <h2 class="topic">Explaination Topic:01 &rAarr; Rotate</h2>
+        <span>
+            With the help of "transform-rotate: ....;" we can rotate an element. Like This &rArr;
+        </span>
+        <pre>
+            #one{
+                transform: rotate(45deg);
+                transform: rotate(180deg);
+                transform: rotate(-45deg);
+            }
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <!-- Scale -->
+        <h2 class="topic">Explaination Topic:02 &rAarr; Scale</h2>
+        <span>
+            With the help of "transform: scale(....);" we can scale an element. Like This &rArr;
+        </span>
+        <pre>
+            #two{
+                transform: scale(1.5);
+            }
+
+            Here if we want to sets scale along to diffrent direction (X & Y) then &rArr;
+            #two{
+                transform: scale(0.5,1.5);
+            }
+
+            Here if we want to sets scale only one direction &rArr;
+            #two{
+                transform: scaleX(2);
+            }
+            
+            #two{
+                transform: scaleY(1.5);
+            }
+            
+            #two{
+                transform: scaleZ(3);
+            }
+        </pre>
+        <div class="note">
+            Note: Element scale both (Y - direction & X -dicrection)
+        </div>
+
+        <!-- Translate -->
+        <h2 class="topic">Explain Topic:03 &rAarr; Translate</h2>
+        <span>
+            With the help of "transform: translate (....);" we can translate(move along to X & Y direction) an element. Like This &rArr;
+        </span>
+        <pre>
+            #three{
+                transform: translate(100px, 100px);
+            }
+
+            Here if we want to sets translate along to only one direction Then &rArr;
+            #three{
+                transform: translateX(50px);
+            }
+
+            #three{
+                transform: translateY(30px);
+            }
+            
+        </pre>
+        <div class="note">
+            Note: Translate Movement along width only 2D.
+        </div>
+
+        <!-- Skew -->
+        <h2 class="topic">Explaination Topic:04 &rAarr; Skew</h2>
+        <span>
+            With the help of "transform: skew(....);" we can skew an element. Like This &rArr;
+        </span>
+        <pre>
+            #four{
+                transform: skew(30deg);
+                transform: skew(-30deg);
+            }
+
+            Here we can also set skew for X & Y direction
+            #four{
+                transform: skewX(50deg);
+            }
+            
+            #four{
+                transform: skewY(35deg);
+            }
+
+            Here we can sets multiple transformation for an element Like This &rArr;
+            #five{
+                transform: rotate(20deg) translateX(10px) skew(12deg) scaleY(1.05);
+            }
+        </pre>
+        <div class="note">
+
+        </div>
+         
+    </div>
+
+    <!-- Box Shadow -->
+    <h1 class="heading">&star; Box Shadow &star;</h1>
+    <div class="boxshadow">
+        
+    </div>
+
+    <div class="explaination">
+        <h2 class="topic">Explaination Topic:01 &rAarr; Box Shadow</h2>
+        <span>
+            With the help of box shadow we can adds "shadow" effects around an element's frame. Like This &rArr; 
+
+            We can also give 3D effect an element with the help of "box-shadow"
+        </span>
+        <pre>
+            .boxshadow{
+                height: 200px;
+                width: 200px;
+                background-color: red;
+                box-shadow: 2px 2.5px 10px black;
+            }
+            Where,
+            2px = X-ofset (distance along with x-axis)
+            2.5px = Y-ofeset (distance along with y-axis)
+            10px = blur radius of the shadow (value of blurness of the shadow)
+            
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+</body>
+</html>

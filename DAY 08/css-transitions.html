@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/css-transitions.css">
+    <title>CSS-Transitions</title>
+</head>
+<body>
+    <h1 class="heading">&star; CSS Transitions &star;</h1>
+    <p>&rAarr; Transitions enable you to define the transition between two states of an element.</p>
+
+    <div class="transitions">
+
+    </div>
+
+    <div class="timingfunction">
+
+    </div>
+
+    <div class="explaination">
+        <!-- Transitions Duration -->
+        <h2 class="topic">Explaination Topic:01 &rAarr; Transitions Duration</h2>
+        <span>
+            If we want to changed any element states after hover then we should be used "transition-property" Like This &rArr;
+        </span>
+        <pre>
+            Here we create a div(.transitions) and give them hover effect with transition
+            .transitions{
+                height: 200px;
+                width: 200px;
+                background-color: #4dff00ff;
+                transition-duration: 1s;   
+            }
+            
+            .transitions:hover{
+                background-color: black;
+                border-radius: 50%;
+            }
+            
+            Here if we don't define the "transition-duration" then after hover
+            element changed our states immediately.
+            but if we define the "transition-duration: 1s;" then after hover
+            element take 1s(second) to changed our states.
+        </pre>
+        <div class="note">
+            
+        </div>
+        
+        <!-- Transition Delay -->
+        <h2 class="topic">Explaination Topic:02 &rAarr; Transition Delay</h2>
+        <span>
+            If we want to changed any element states after hover then we should be used "transition-property" Like This &rArr;
+        </span>
+        <pre>
+            Here we create a div(.transitions) and give them hover effect with transition
+            .transitions{
+                height: 200px;
+                width: 200px;
+                background-color: #4dff00ff;
+                transition-duration: 1s;
+                transition-delay: 1.5s;
+            }
+            
+            .transitions:hover{
+                background-color: black;
+                border-radius: 50%;
+            }
+
+            Here if we don't define the "transition-delay" then after hover
+            element start changing our states immediately.
+            but if we define the "transition-delay: 1s;" then after hover
+            element take 1.5s(second) gap for start changing our states then element changed
+            our states in 1s(second){Because of "transition-duration: 1s;"}.
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <!-- Timing Function -->
+        <h2 class="topic">Explaination Topic:03 &rAarr; Transition Timing Function</h2>
+        <span>
+            The "transition-timing-function" in CSS controls the speed of an animation over time. It defines how the transition progresses, whether it's linear, fast at the start, slow at the end, or follows a custom curve.  Common values include ease, linear, ease-in, ease-out, and ease-in-out. Like This &rArr;
+        </span>
+        <pre>
+            .timingfunction{
+                height: 100px;
+                width: 100px;
+                background-color: red;
+                margin-top: 10px;
+                margin: 0 auto;
+                transition: margin-top 2s ease-in 0.2s;
+            }
+            
+            .timingfunction:hover{
+                margin-top: 400px;
+                background-color: blue  ;
+            }
+            
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <!-- Transition Shorthand -->
+        <h2 class="topic">Explaination Topic:02 &rAarr; Transition Shorthand</h2>
+        <span>
+            property name | duration | timing-function | delay <br>
+            transition: margin-top 2s ease-in-out 0.2s;
+        </span>
+        <pre>
+            .timingfunction{
+                height: 100px;
+                width: 100px;
+                background-color: red;
+                margin-top: 10px;
+                margin: 0 auto;
+                transition: margin-top 2s ease-in 0.2s; // transition shorthand
+            }
+            
+            .timingfunction:hover{
+                margin-top: 400px;
+                background-color: blue  ;
+            }
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+</body>
+</html>

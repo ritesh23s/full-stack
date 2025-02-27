@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/display-properties.css">
+    <title>Display Properties</title>
+</head>
+<body>
+    <h1 class="heading">&star; Display Properties &star;</h1>
+    <p>&rAarr; The CSS display property is use to determine whether an element is treated as a block/inline & the layout used for children Children → Flexbox/Grid/etc.</p>
+    <table border="black">
+        <tr>
+            <th>Block</th>
+            <th>Inline</th>
+        </tr>
+        <tr>
+            <td>Always start on a new line </td>
+            <td>Do not start on a new line </td>
+        </tr>
+        <tr>
+            <td>Take up as much horizontal space as possible (the 
+                full width of the container or browser window if 
+                there is no container) 
+            </td>
+            <td class="yellow">
+                Only use as much horizontal space as required by 
+                the content. Do not accept width and height CSS 
+                properties 
+            </td>
+        </tr>
+        <tr>
+            <td>Will respect width and height CSS properties </td>
+            <td class="yellow">Margins will work horizontally, but not vertically </td>
+        </tr>
+        <tr>
+            <td>Horizontal and vertical margins both work </td>
+            <td class="yellow">
+                Padding works on all sides, but the top and bottom 
+                may overlap other elements. 
+            </td>
+        </tr>
+    </table>
+    <!-- <h2>Heading 1</h2>
+    <h2>Heading 2</h2>
+    <span class="spn">Span 1</span>
+    <span class="spn">Span 2</span> -->
+
+    <!-- Inline & Block -->
+    <div id="display"></div>
+    <div id="display"></div>
+    <div id="display"></div>
+    
+    <div class="explaination">
+        <!-- Display inline -->
+        <h3 class="topic">Explaination Topic:01 &rAarr; Display inline</h3>
+        <span>
+            Takes only the space required by the element. no linebreaks before and affter setting width/height and margin/padding (only top & bottom margin/padding) are not allowed. Sets Like This &rArr;
+        </span>
+        <pre>
+            #display{
+                height: 200px;
+                width: 200px;
+                background-color: greenyellow;
+                border: 2px solid black;
+                margin: 5px;
+                display: inline;
+            }
+        </pre>
+        <div class="note">
+            Note:
+            <ol type="1">
+                <li>
+                    display:inline; property say that we don't need new line space around my "top and buttom" and any element easyly stay in my any side.
+                </li>
+                <li> Here's if we give display:inline; then height & width has not effect on this element</li>
+                <li>If we give display:block; then height & width effect on this element </li>
+                <li>Important - Display:inline; properties always take only required space by element</li>
+            </ol>
+
+        </div>
+
+        <!-- Display Block -->
+        <h3 class="topic">Explaination Topic:02 &rAarr; Display Block</h3>
+        <span>
+            Takes full space available in width and leaves a newline before and affter the element. Sets Like This &rArr;
+        </span>
+        <pre>
+            #display{
+                height: 200px;
+                width: 200px;
+                background-color: greenyellow;
+                border: 2px solid black;
+                margin: 5px;
+                display: block;
+            }
+        </pre>
+        <div class="note">
+            Note:
+            <ol type="1">
+                <li>We can be easyly set width & height , margin & padding with display:block; properties</li>
+                <li>display:block; property say that we need new line space around my "top and buttom" and i don't want to any element stay in my any side.</li>
+                <li>Important - Display:block; properties always take full space by element </li>
+            </ol>   
+        </div>
+
+        <!-- display: inline-block; -->
+        <h3 class="topic">Explaination Topic:03 &rAarr; Display Inline Block</h3>
+        <span>
+            It is similar to display:inline; but setting height,width,margin & padding is allowed element can seet each other
+        </span>
+        <pre>
+            If we want to set any element position in inline and define
+            width & height , margin & padding then we always use display:inline-block properties. Like This &rArr;
+
+            #display{
+                height: 200px;
+                width: 200px;
+                background-color: greenyellow;
+                border: 2px solid black;
+                margin: 5px;
+                display: inline-block;
+            }
+
+            Here's we have set width & height , margin & padding in #display with the help of display:inline-block; properties
+
+        </pre>
+        <div class="note">
+            Note:
+            <ol type="1">
+                <li>We can be easyly set width & height , margin & padding with display:inline-block; properties</li>
+            </ol>
+        </div>
+
+        
+    </div>    
+</body>
+</html>

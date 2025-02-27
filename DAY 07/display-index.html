@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/display-style.css">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <title>CSS  Display</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://ritesh23s.github.io/portfolio/" target="_blank">Contact</a></li>
+                <li><a href="#">Career</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- The Display Property -->
+        <h1>The Display Property</h1>
+        <h2>The CSS display property is use to determine whether an element is treated as a block/inline & the layout used for children
+            <span>
+                Children &rightarrow; Flexbox/Grid/etc.
+            </span>
+        </h2>
+
+        <!-- Display:inline; -->
+        <h1>Display:inline;</h1>
+        <h2>Takes only the space required by the element. no linebreaks before and affter setting width/height and
+            margin/padding <span>(only top & bottom margin/padding)</span> are not allowed.</h2>
+        <span>
+            Note - We can't set width & height , margin & padding with display:inline; properties
+        </span>
+        <section class="displayinline">
+            <pre>Here's two boxes {box1(bg-color= red) & box2(bg-color= blue)}</pre>
+            <div class="box1">
+                BOX1
+            </div>
+            <div class="box2">
+                BOX2
+            </div>
+            <pre>
+                Important - Display:inline; properties always take only required space by element 
+
+
+                .box1{
+                    background-color: red;
+                    /* width: 150px; */
+                    /* height: 300px; */
+                    display: inline;
+                }
+                
+                .box2{
+                    background-color: blue;
+                    /* width: 150px; */
+                    /* height: 300px; */
+                    display: inline;
+                }
+                Here's if we give display:inline; then height & width has not effect on this element 
+
+                <span>
+                    display:inline; property say that we don't need new line space around my "top and buttom" and any element easyly stay in my any side.</span>
+
+                note - If we give display:block; then height & width effect on this element 
+            </pre>
+        </section>
+
+        <!-- Display:Block; -->
+        <h1>Display:Block;</h1>
+        <h2>Takes full space available in width and leaves a newline before and affter the element.</h2>
+
+        <span class="note">
+            Note - We can be easyly set width & height , margin & padding with display:block; properties
+        </span>
+        <section class="displayblock">
+            <pre>Here's two boxes {block1(bg-color= red) & block2(bg-color= blue)}</pre>
+            <div class="block1">
+                BLOCK1
+            </div>
+            <div class="block2">
+                BLOCK2
+            </div>
+
+            <pre>
+                Important - Display:block; properties always take full space by element 
+                
+                .block1 {
+                    background-color: red;
+                    width: 100px;
+                    display: block;
+                }
+
+                <span>display:block; property say that we need new line space around my "top and buttom" and i don't want to any element stay in my any side.</span>
+                
+                .block2 {
+                    background-color: blue;
+                    display: inline;
+                }
+                Here's display:inline; that means here only take required space by the element and we can't set width & height.
+            </pre>
+        </section>
+
+        <!-- Display:inline-block; -->
+        <h1>Display:inline-block;</h1>
+        <h2>It is similar to display:inline; but setting height,width,margin & padding is allowed element can seet each
+            other
+        </h2>
+        <span class="note">
+            Note - We can be easyly set width & height , margin & padding with display:inline-block; properties
+        </span>
+        <section class="displayinlineblock">
+            <pre>Here's two boxes {inlineblock1(bg-color= red) & inlineblock2(bg-color= blue)}</pre>
+            <div class="inlineblock1">
+                INLINEBLOCK1
+            </div>
+            <div class="inlineblock2">
+                INLINEBLOCK2
+            </div>
+
+            <pre>
+
+            <h2 class="imp">
+            If we want to set any element position in inline and define
+            width & height , margin & padding then we always use display:inline-block properties
+            </h2>
+                .inlineblock1{
+                    background-color: red;
+                    width: 200px;
+                    height: 50px;
+                    margin: 10px;
+                    padding: 5px;
+                    display: inline-block;
+                    }
+
+                    Here's we have set width & height , margin & padding in 
+                    INLINEBLOCK1 Box with the help of display:inline-block; properties
+                    
+                    
+                    .inlineblock2{
+                        background-color: blue;
+                    display: inline;
+                    }
+                
+                Here's we give only display:inline; properties for seet INLINEBLOCK1 to INLINEBLOCK2 side, here we can't define 
+                width & height, margin & padding beacouse of display:inline; properties
+            </pre>
+        </section>
+
+        <!-- Display:none; vs Visiblity:hidden; -->
+        <h1>Display:none; vs Visiblity:hidden;</h1>
+        <h2>With display:none; the element is removed from the document flow Its space is not blocked.</h2>
+        <h2>With Visiblity:hidden; the element is hidden but its space is reserved.</h2>
+        <section class="displaynonevisibilityhidden">
+            <pre>Here's two boxes {DISPLAY:NONE;(bg-color= red) & VISIBILITY:NONE;(bg-color= blue)}</pre>
+            <div class="displaynone">
+                DISPLAY:NONE;
+            </div>
+            <div class="visibilityhidden">
+                VISIBILITY:NONE;
+            </div>
+
+            <pre>
+
+                .displaynone{
+                    background-color: red;
+                    width: 200px;
+                    height: 50px;
+                    margin: 5px 0px;
+                    display: none;
+                }
+
+                Here's if we give displa:none; then element is removed from document flow and element space is not blocked
+
+                .visibilityhidden {
+                    background-color: blue;
+                    width: 200px;
+                    height: 50px;
+                    visibility: hidden;
+                }
+
+                Here's if we give visibility:hidden; then element element is hidden but its space is reserved (Its space is blocked.)  
+            </pre>
+        </section>
+
+        <!-- Text-align property -->
+         <h1>Text align property</h1>
+         <h2>Used to set horijontal alignment of a text</h2>
+        <section class="textalignproperty">
+            <div class="textalign">
+                SHUBHAM
+            </div>
+
+            <pre>
+                .textalign{
+                    background-color: red;
+                    height: 100px;
+                    text-align: center;
+                    /* text-align: left; */
+                    /* text-align: right; */
+                }
+
+                Here,s we easyly set text(SHUBHAM) position by the help of text-align property
+
+                <span>Note - With the help of "text-align:....;" property we moved only content which is inside of div.
+                (Here`s never moved overall div only move content which is inside of div.)</span>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; ShuBh.com</p>
+    </footer>
+</body>
+
+</html>
