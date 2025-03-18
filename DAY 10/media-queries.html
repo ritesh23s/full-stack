@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <title>Media-Queries</title>
+</head>
+<body>
+    <h1 class="heading">&star; Media Queries &star;</h1>
+    <p>&rAarr; Its help to create <mark>responsive</mark> website.</p>
+    <p>&rAarr; media-queries have particular features - <mark>width(of viewport)</mark></p>
+    here are multiple media-queries features <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries">click here ..!</a>
+    <div class="note">
+        The most usable media-queries features &rAarr; width
+    </div>
+    <pre class="ex">
+        syntex &rArr;
+
+        @media (width: 400px) {
+            div{
+                background-color: red;
+            }
+        
+            h3{
+                color: blue;
+                font-weight: bold;
+            }
+        }
+    </pre>
+
+    <!-- @media-queries(@media (width: 400px)) which is apply at the exactly  a single point -->
+    <h3 class="demo">Demo of @media-queries(@media (width: 400px)) which is apply at the <mark>exactly  a single point.</mark></h3>
+    <div class="box boxes">
+        This is a Box
+    </div>
+    <div class="explaination">
+        <h2 class="topic">Explaination Topic:01 &rAarr; Demo of @media-queries which is apply at the exactly  a single point. </h2>
+        <span>
+            Sets Like This &rArr;
+        </span>
+        <pre>
+            @media (width: 400px) {
+                .box{
+                    background-color: red;
+                }
+            
+                .demo{
+                    color: blue;
+                    font-weight: bold;
+                }
+            }
+
+            After sets these media-queries properties (@media (width: 400px))
+            when device width touch <mark>exactly 400px</mark> then div background-color = red, and h3 color = blue and fontp-weight = bold.
+        </pre>
+
+        <div class="note">
+
+        </div>
+    </div>
+
+    <!-- (@media (min-width: 400px)) which is apply at the min width & above than min-width -->
+    <h3 class="demo1">Demo of @media-queries (@media (min-width: 500px)) which is apply at the <mark>min width & above than min-width. </mark></h3>
+    <div class="box1 boxes">
+        This is a Box1
+    </div>
+    <div class="explaination">
+        <h2 class="topic">Explaination Topic:02 &rAarr; (@media (min-width: ....;)) which is apply at the min width & above than min-width </h2>
+        <span>
+            Sets Like This &rArr;
+        </span>
+        <pre>
+            @media (min-width: 500px) {
+                .box1{
+                    background-color: yellowgreen;
+                }
+            
+                .demo1{
+                    color: orangered;
+                    font-weight: bold;
+                }
+            }
+
+            After sets this media-queries properties (@media (min-width: 500px)) 
+            when the device screen width touch <mark>500px and more than 500px</mark>
+            then .box1 background-color = yellowgreen and .demo1 color = orangered , font-weight = bold.
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+
+    <!-- @media-queries (@media (max-width: 600px)) which is apply at the min width & less than max-width. -->
+    <h3 class="demo2">Demo of @media-queries (@media (max-width: 600px)) which is apply at the <mark>max width & less than max-width. </mark></h3>
+    <div class="box2 boxes">
+        This is a Box2
+    </div>
+    <div class="explaination">
+        <h2 class="topic">Explaination Topic:03 &rAarr; (@media (max-width: 600px)) which is apply at the max width & less than max-width.</h2>
+        <span>
+            Sets Like This &rArr;
+        </span>
+        <pre>
+            @media (max-width: 600px) {
+                .box2{
+                    background-color: tomato;
+                    box-shadow: 2px 2px 10px black;
+                }
+            
+                .demo2{
+                    color: teal;
+                    font-weight: bold;
+                }
+            }
+
+            After sets this media-queries properties @media (max-width: 600px)
+            when the device screen width touch <mark>600px and less than 600px</mark> 
+            then .box2 background-color = tomato and .demo2 color = navy , font-weight = bold.
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+
+    <h3 class="demo3">Demo of @media-queries <mark>@media (min-width: 200px) and (max-width: 300px)</mark></h3>
+    <div class="box3 boxes">
+        This is a Box3
+    </div>
+    <div class="explaination">
+        <h2 class="topic">Explaination Topic:04 &rAarr; @media (min-width: ....;) and (max-width: ....;)</h2>
+        <span>
+            Whith the help of <mark>and</mark> (min-width: 200px) and (max-width: 300px) <mark>we can sets our range between given dimention of width.</mark>
+        </span>
+        <pre>
+            Sets Like This &rArr;
+            @media (min-width: 200px) and (max-width: 300px) {
+                .box3{
+                    background-color: springgreen;
+                }
+            
+                .demo3{
+                    color: brown;
+                }
+            }
+
+
+            After sets this media-queries properties <mark>@media (min-width: 200px) and (max-width: 300px)</mark>
+            when device width touch 200px to 300px width then .box3 background-color = springgreen;
+            and .demo3 color = brown.
+
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+
+</body>
+</html> 

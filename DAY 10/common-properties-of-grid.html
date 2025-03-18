@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/common-properties-of-grid.css">
+    <title>Common-Properties-of-Grid</title>
+</head>
+<body>
+    <h1 class="heading">&star; Common Properties of Grid. <mark>Which is used for element's alignment</mark> &star;</h1>
+    <h3 class="demo"> For Horizontal Alignment.</h3>
+    <ol>
+        <li>justify-items: ...; <mark>(used for container)</mark></li>
+        <li>justify-self: ...; <mark>used for item</mark></li>
+    </ol>
+
+    <h3 class="demo"> For Vertical Alignment.</h3>
+    <ol>
+        <li>align-items: ...; <mark>(used for container)</mark></li>
+        <li>align-self: ...; <mark>used for item</mark></li>
+    </ol>
+
+    <h3 class="demo">Place-Items</h3>
+    <ol>
+        <li>place-items: ...; <mark>(used for container Horizontal & Vertical Both)</mark></li>
+        <li>place-self: ...; <mark>used for item</mark></li>
+    </ol>
+
+    <h3 class="demo">Demo of "Place"</h3>
+    <div class="gridplace">
+        <div class="items one">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+    </div>
+
+    <!-- Explaination -->
+    <div class="explaination">
+        <h2 class="topic">Explaination Topic: &rAarr; Place.</h2>
+        <span>
+            Sets Like This &rAarr;
+        </span>
+        <pre>
+            .gridplace{
+                height: 300px;
+                width: 600px;
+                background-color: rgb(212, 212, 20);
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10px;
+                place-items: center;
+            }
+            Here, If we sets <mark>place-items: center;</mark> then all items place in center inside overall container's cell.
+
+            Now -
+            .one{
+                place-self: start;
+            }
+
+            If we sets <mark>place-self: start;</mark> then a particular item (.one) position sets inside a cell at the start.
+        </pre>
+        <div class="note">
+            Note: "place sets both alignments "Horizontal & Vertical""
+        </div>
+    </div>
+</body>
+</html>

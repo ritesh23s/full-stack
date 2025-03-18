@@ -1,0 +1,97 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.ex{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* for creating grid model used table and other thing */
+table{
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid black; */
+}
+
+.cell{
+    background-color: red;
+}
+
+.track{
+    background-color: blue;
+}
+
+.demo{
+    color: #fb1eff;
+    text-align: center;
+}
+
+
+.explaination{
+    background-color: aqua;
+}
+
+.headingexplain{
+    color: crimson;
+    text-align: center;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+.items{
+    height: 50px;
+    width: 100px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* "grid-tamplate-rows: ....;" */
+.gridtemprows{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(217, 217, 20);
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    /* grid-template-columns: 100px 100px 100px 100px; */
+}
+
+/* "grid-tamplate-columns: ....;" */
+.gridtempcolumns{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(217, 217, 20);
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 20px;
+}
+
+/* grid-template-columns & rows uses. */
+.gridtempuses{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(217, 217, 20);
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+}
+
+/* here another way to sets grid-template */
+/* .gridtempuses{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+} */
+
+/* generally we can't prefer auto */

@@ -1,0 +1,59 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.demo{
+    color: #fb1eff;
+    text-align: center;
+}
+
+
+.explaination{
+    background-color: aqua;
+}
+
+.headingexplain{
+    color: crimson;
+    text-align: center;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+.items{
+    height: 50px;
+    width: 100px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* grid-place */
+.gridplace{
+    height: 300px;
+    width: 600px;
+    background-color: rgb(212, 212, 20);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    place-items: center;
+}
+
+.one{
+    place-self: start;
+}
+
+
+

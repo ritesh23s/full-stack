@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/css-grid(display - grid).css">
+    <title>CSS-Grid (display: grid;) Grid Template</title>
+</head>
+<body>
+    <h1 class="heading">&star; CSS Grid (display: grid;)</h1>
+    <p>&rAarr; Setting a <mark>container's display to grid</mark> will make all <mark>children grid items</mark>.</p>
+    <pre class="ex"> 
+        .container{
+            display: grid;
+        }
+    </pre>
+
+    <!-- Grid Model -->
+    <h2 class="topic">Grid Model &rAarr;</h2>
+    <table border="">
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="track"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="cell"></td>
+            <td class="track"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="track"></td>
+        </tr>
+    </table>
+    <pre class="ex">
+        <h2>Grid Model</h2>
+        <ol>
+            <li>Grid Lines &rArr; Persents lines in grid is called grid-lines.</li>
+            <li>Grid Cell &rArr; A box inside items is called cell. (which is show in "red" color.)</li>
+            <li>Grid Track &rArr; Space between two lines is called track. (which is show in "blue" color.)</li>
+        </ol>
+    </pre>
+
+    <h1 class="heading">&star; Grid template &star;</h1>
+    <p>&rAarr; They define the lines & track sizing of my grid container.</p>
+    <ol>
+        <li>grid-template-rows</li>
+        <li>grid-template-columns</li>
+    </ol>
+
+    <!-- Demo of "grid-template-rows: ....;" -->
+    <h3 class="demo">Demo of "grid-template-rows: ....;" </h3>
+    <div class="gridtemprows">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+    </div>
+
+    <!-- "grid-template-columns: ....;" -->
+    <h3 class="demo">Demo of "grid-template-columns: ....;" </h3>
+    <div class="gridtempcolumns">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+    </div>
+
+    <!-- Demo of "grid-template-columns & rows uses: ....;" -->
+    <h3 class="demo">Demo of "grid-template-columns & rows uses: ....;" </h3>
+    <div class="gridtempuses">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+    </div>
+    
+    <!-- explaination -->
+    <div class="explaination">
+
+        <!-- grid-template-rows: ....; -->
+        <h2 class="topic">Explaination Topic:01 &rAarr; grid-template-rows: ....;</h2>
+        <span>
+            Its used to create & sets grid <mark>rows properties(rows height). Like This &rArr;</mark>
+        </span>
+        <pre>
+            .gridtemprows{
+                width: 600px;
+                height: 300px;
+                background-color: rgb(217, 217, 20);
+                display: grid;
+                grid-template-rows: 50px 50px 50px 50px 50px;
+            }
+            Here we sets like this "50px 50px 50px 50px 50px" all rows height size.
+            
+            
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <!-- grid-template-columns: ...; -->
+        <h2 class="topic">Explaination Topic:02 &rAarr; grid-template-columns: ...;</h2>
+        <span>It's used to create & sets <mark>grid columns properties(columns width)</mark>. Like This &rArr;</span>
+        <pre>
+            .gridtempcolumns{
+                width: 600px;
+                height: 300px;
+                background-color: rgb(217, 217, 20);
+                display: grid;
+                grid-template-columns: 20px 20px 20px 20px 20px;
+            }
+
+            Here we sets like this "100px 100px 100px" all columns width size.
+        </pre>
+        <div class="note">
+
+        </div>
+
+        <!-- grid-template-columns & rows uses. -->
+        <h2 class="topic">Explaination Topic: &rAarr; grid-template-columns & rows uses. </h2>
+        <span>
+            Here explaination how we can sets <mark>grid-template-columns & rows</mark>.
+        </span>
+        <pre>
+            .gridtempuses{
+                width: 600px;
+                height: 300px;
+                background-color: rgb(217, 217, 20);
+                display: grid;
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 50px 50px 50px 50px 50px;
+            }
+
+            here we defined grid-template-columns & rows properties.
+            if i want to create an another item inside container then thoese
+            item automatically sets in next cell.
+
+            <mark>Here another way to sets grid-template</mark> Like this &rArr;
+            .gridtempuses{
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto auto auto;
+            }
+
+            <mark>Generally we can't prefer auto</mark>
+
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+</body>
+</html>

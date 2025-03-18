@@ -1,0 +1,56 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.ex{
+    background-color: yellow;
+}
+
+h3{
+    color: #fb1eff;
+    text-align: center;
+}
+
+
+.explaination{
+    background-color: aqua;
+    margin-top: 15px;
+}
+
+.headingexplain{
+    color: crimson;
+    text-align: center;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+.boxes{
+    width: 300px;
+    height: 100px;
+}
+
+
+/* Demo of @media (orientation: landscape) */
+@media (orientation: landscape) {
+    .box{
+        background-color: skyblue;
+        box-shadow: 2px 2px 8px black;
+    }
+
+    .demo1{
+        color: green;
+        font-weight: bold;
+    }
+}

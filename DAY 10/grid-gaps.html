@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid-gaps.css">
+    <title>Grid-Gaps</title>
+</head>
+<body>
+    <h1 class="heading">&star; Grid Gaps &star;</h1>
+    <p>&rAarr; They are used to define the gaps between the lines.</p>
+    <ol>
+        <li>row-gap</li>
+        <li>column-gap</li>
+    </ol>
+    <!-- grid-gap: rowGap columnGap; -->
+    <h3 class="demo">Demo of "grid-gap: rowGap columnGap;"</h3>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+    </div>
+
+    <!-- Explaination -->
+    <div class="explaination">
+        <h2 class="topic">Explaination Topic &rAarr; "row-gap" & "column-gap"</h2>
+        <span>
+            Sets Like This &rArr;
+        </span>
+        <pre>
+            .container{
+                height: 300px;
+                width: 600px;
+                background-color: rgb(212, 212, 20);
+                display: grid;
+                grid-template-rows: repeat(5, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 10px;      //sets gaps between rows.
+                column-gap: 30px;       // sets gaps between columns.
+            }
+
+            Here we easily sets the gaps between lines.
+
+            <mark>Here shorthand to write gap &rArr;</mark>
+            
+            01.grid-gap: 10px 50px;
+                Here, 10px = row-gap, & 50px = column-gap
+            02.grid-gap: 20px;     
+                Here, 20px is both gap <mark>row & column.</mark>
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+</body>
+</html>

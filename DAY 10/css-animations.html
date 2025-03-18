@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/css-animations.css">
+    <title>CSS-Animations</title>
+</head>
+<body>
+    <!-- CSS Animations -->
+    <h1 class="heading">&star; CSS Animations &star;</h1>
+    <p>&rAarr; Used for to <mark>animate CSS elements</mark>. <br> syntex &rArr;</p>
+    <pre class="ex">
+        @keyframes myName{
+            from{font-size: 20px;}
+            to{font-size: 40px;}
+        }
+
+        Where myName = Animation Name (write anything like - abc, hjhj, etc.)
+    </pre>
+
+    <h1 class="heading">For sets Animation we have to firstlly define following Properties &rAarr;</h1>
+    <ol>
+        <li>animation-name</li>
+        <li>animation-duration</li>
+        <li>animation-timing-function</li>
+        <li>animation-delay</li>
+        <li>animation-iteration-count</li>
+        <li>animation-direction</li>
+    </ol>
+
+    <span>We already read the some properties(animation-duration, animation-timing-function, animation-delay) in <mark>transition property</mark> <br> <mark>Now we need to read some properties.</mark></span>
+
+    <!-- animation-name -->
+    <h2 class="topic">Topic:01 &rAarr; animation-name.</h2>
+    <p>&rAarr;Define animation name which is we create Like &rArr;</p>
+    <pre class="ex">
+        @keyframes colorAnimation{
+            from{
+                background-color: green;
+            }
+        
+            to{
+                background-color: blue;
+            }
+        }
+
+        Where,
+        colorAnimation = Animation Name.
+        and
+
+        from{       to{
+
+        }           }
+
+        is Created Animation.
+    </pre>
+
+    <!-- animation-iteration-count -->
+    <h2 class="topic">Topic:05 &rAarr; animation-iteration-count.</h2>
+    <p>&rAarr; Its tell <mark>how many times show animation</mark> at your elements. <br> Write Like This &rArr;</p>
+    <ol>
+        <li>animation-iteration-count: 1/2/3.....;</li>
+        <li>animation-iteration-count: infinite;</li>
+    </ol>
+    <span>Sets Like This &rAarr;</span>
+    <pre class="ex">
+        .box{
+            height: 100px;
+            width: 300px;
+            background-color: pink;
+            animation-name: colorAnimation;
+            animation-duration: 5s;
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-iteration-count: infinite; // animation show infinite times.
+        }
+        
+    </pre>
+
+    <!-- animation-direction -->
+    <h2 class="topic">Topic:06 &rAarr; animation-direction.</h2>
+    <p>&rAarr; Its have some <mark>specific values</mark> for set animation-direction.</p>
+    <ol>
+        <li>normal</li>
+        <li>reverse</li>
+        <li>alternate</li>
+        <li>alternate-reverse</li>
+        <li>initial</li>
+    </ol>
+    for more animation-direction properties please visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction" target="_blank">Click Here ..!!</a> <br>
+    <span>Sets Like This &rArr;</span>
+    <pre class="ex">
+        .box{
+            animation-direction: normal;
+            animation-direction: reverse;
+            animation-direction: alternate;
+            animation-direction: alternate-reverse;
+            animation-direction: initial;
+        }
+        
+    </pre>
+
+    <!-- Animation Shorthand -->
+    <h2 class="topic">Topic: &rAarr; Animation Shorthand</h2>
+    <span>Here we can also sets animation in shorthand Like This &rAarr;</span>
+    <pre class="ex">
+        .box{
+            height: 100px;
+            width: 300px;
+            background-color: pink;
+            animation: fontAnimation 3s ease-in 0s infinite normal;
+        }
+        
+        Where, 
+        fontAnimation = animation-name
+        3s = animation-duration
+        ease-in = timing-function
+        0s = animation-delay
+        infinite = animation-iteration-count
+        normal = animation-direction
+    </pre>
+    <h3 class="demo">Demo of CSS Animation</h3>
+    <div class="box">
+        This is a Box
+    </div>
+    <!-- Use of Animation  -->
+     <div class="explaination">
+        <h2 class="topic">Explaination Topic: &rAarr; How to use annimation.?(Explaination for Demo of CSS Animation)</h2>
+        <span>
+            Use annimation Like This &rArr;
+        </span>
+        <pre>
+            
+            <mark>Here we Create animation template (animation blue print) and defined "animation name" <br></mark> 
+            <mark>like - fontAnimation, widthAnimation, colorAnimation</mark>
+            
+            @keyframes fontAnimation{
+                from{
+                    font-size: 20px;
+                }
+                
+                to{
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+            
+            @keyframes widthAnimation{
+                from{
+                    width: 10px;
+                }
+                
+                to{
+                    width: 400px;
+                    border-radius: 15px;
+                }
+            }
+            
+            @keyframes colorAnimation{
+                from{
+                    background-color: green;
+                }
+                
+                to{
+                    background-color: blue;
+                }
+            }
+
+            <mark>Now.! here we used multiple animation</mark>
+            
+            and we defned <mark>animation properties</mark> of the element (.box)             
+            .box{
+                height: 100px;
+                width: 300px;
+                background-color: pink;
+                animation-name: colorAnimation , fontAnimation, widthAnimation;
+                animation-duration: 5s;
+                animation-timing-function: ease-in;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+            }
+        </pre>
+    </div>
+</body>
+</html>

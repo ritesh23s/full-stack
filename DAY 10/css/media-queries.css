@@ -1,0 +1,100 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.ex{
+    background-color: yellow;
+}
+
+h3{
+    color: #fb1eff;
+    text-align: center;
+}
+
+
+.explaination{
+    background-color: aqua;
+    margin-top: 15px;
+}
+
+.headingexplain{
+    color: crimson;
+    text-align: center;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+.boxes{
+    width: 300px;
+    height: 100px;
+}
+
+
+
+/* Media-Queries */
+
+/* apply at the exactly  a single point */
+@media (width: 400px) {
+    .box{
+        background-color: red;
+    }
+
+    .demo{
+        color: blue;
+        font-weight: bold;
+    }
+}
+
+
+/* (@media (min-width: 400px)) which is apply at the min width & above than min-width */
+@media (min-width: 500px) {
+    .box1{
+        background-color: yellowgreen;
+    }
+
+    .demo1{
+        color: orangered;
+        font-weight: bold;
+    }
+}
+
+
+/* @media-queries (@media (max-width: 600px)) which is apply at the min width & less than max-width. */
+
+@media (max-width: 600px) {
+    .box2{
+        background-color: tomato;
+        box-shadow: 2px 2px 10px black;
+    }
+
+    .demo2{
+        color: navy;
+        font-weight: bold;
+    }
+}
+
+
+
+/* (min-width: 200px) and (max-width: 300px) */
+@media (min-width: 200px) and (max-width: 300px) {
+    .box3{
+        background-color: springgreen;
+        box-shadow: 5px 5px 15px black;
+    }
+
+    .demo3{
+        color: brown;
+    }
+}

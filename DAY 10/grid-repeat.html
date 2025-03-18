@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid-repeat.css">
+    <title>Grid-Repeat</title>
+</head>
+<body>
+    <h1 class="heading">&star; Grid Template Repeat &star;</h1>
+    <p>&rAarr; Repeat is used to divide all available space in equal (=) size of rows & columns</p>
+    <ol>
+        <li>grid-template-rows: repeat(count, 1fr)</li>
+        <li>grid-template-columns: repeat(count, 1fr)</li>
+        <div class="note">1fr means &rArr; 1 fraction of 100% available space(rows & colomns). <br>
+        here count = <mark>number of rows & columns</mark> which we want to create.
+        </div>
+    </ol>
+
+    <!-- grid-template-columns & rows: repeat(count, 1fr); -->
+    <h3 class="demo">Demo of "grid-template-columns & rows: repeat(count, 1fr);"</h3>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+    </div>   
+
+    <!-- Explaination -->
+    <div class="explaination">
+        <h2 class="topic">Explaination Topic: Grid Template Repeat.</h2>
+        <span>
+            Sets like this
+        </span>
+        <pre>
+            .container{
+                width: 600px;
+                height: 300px;
+                background-color: rgb(217,217,20);
+                display: grid;
+                grid-template-rows: repeat(5,1fr);
+                grid-template-columns: repeat(3, 1fr);
+            }
+            After sets this properties repeat divide available space in <mark>equally.</mark>
+        </pre>
+        <div class="note">
+            Note: Prefer always used "grid-template-rows" & "grid-template-columns" both together.
+        </div>
+    </div>
+</body>
+</html>

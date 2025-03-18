@@ -1,0 +1,98 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.ex{
+    background-color: yellow;
+}
+
+.demo{
+    color: #fb1eff;
+    text-align: center;
+}
+
+
+.explaination{
+    background-color: aqua;
+}
+
+.headingexplain{
+    color: crimson;
+    text-align: center;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+/* CSS Animations */
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    animation-name: colorAnimation , fontAnimation, widthAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes fontAnimation{
+    from{
+        font-size: 20px;
+    }
+
+    to{
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+
+@keyframes widthAnimation{
+    from{
+        width: 10px;
+    }
+
+    to{
+        width: 400px;
+        border-radius: 15px;
+    }
+}
+
+@keyframes colorAnimation{
+    from{
+        background-color: green;
+    }
+
+    to{
+        background-color: blue;
+    }
+}
+
+/* Here we can also sets animation in shorthand Like This  */
+/* .box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    animation: fontAnimation 3s ease-in 0s infinite normal;
+}
+
+Where, 
+fontAnimation = animation-name
+3s = animation-duration
+ease-in = timing-function
+0s = animation-delay
+infinite = animation-iteration-count
+normal = animation-direction */
