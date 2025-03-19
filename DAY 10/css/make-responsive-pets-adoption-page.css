@@ -1,0 +1,48 @@
+h2{
+    color: red;
+    font-weight: bold;
+}
+
+span{
+    color: chocolate;
+}
+
+#pets{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+}
+
+.card{
+    /* text-align: center; */
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+
+img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+button{
+    text-align: center;
+    /* align-self: center; */
+    border-radius: 7px;
+    background-color: blue;
+    color: white;
+}
+
+h4{
+    text-align: center;
+    color: #3c787e;
+}
+
+
+@media (max-width: 835px) {
+    #pets{
+        flex-wrap: wrap;
+    }
+}
