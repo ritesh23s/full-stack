@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cssfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/z-index.css">
+    <title>Z-Index</title>
+</head>
+<body>
+    <h1 class="heading">&star; Z-index &star;</h1>
+    <p>&rAarr; It decides the <mark>stach level</mark> of elements.</p>
+    <p>&rAarr; Overlapping elements whith a smaller one.</p>
+    <pre class="ex">
+        Syntex &rArr;
+        
+        div {
+            z-index: auto (0);
+            z-index: 1/2/3....;
+            z-index: -1/-2/-3/...;
+        }
+
+    </pre>
+    <div class="note">
+        Note : 
+        <ol>
+            <li>By default all elements "z-index" value always <mark>auto or 0.</mark></li>
+            <li>For giving z-index property firstly we have to set thoese element <mark>position</mark> Like &rArr; <mark> Relative, Absolute, fixed, sticky, etc.</mark></li>
+            <li>We can't sets z-index properties thoese element position is default and static</li>
+        </ol>
+    </div>
+
+    <h3 class="demo">Demo of z-index.</h3>
+    <div class="box one">One</div>
+    <div class="box two">Two</div>
+    <div class="box three">Three</div>
+
+    <!-- Explaination -->
+    <div class="explaination">
+        <h2 class="topic">Explaination Topic:01 &rAarr; Z-index </h2>
+        <span>
+
+        </span>
+        <pre>
+            .one{
+                background-color: red;
+                position: relative;
+                z-index: 1;
+            }
+            
+            .two {
+                background-color: blue;
+                position: relative;
+                bottom: 60px;
+            }
+
+            Here if we sets <mark>position bottom: 60px; </mark>of ".two" then ".two" element Overlapping
+            and cover the ".one" element some part. but 
+            If we sets ".one" element position <mark>position: relative , fixed, etc</mark> and sets <mark>z-index: 1;</mark> then
+            ".one" element Overlapping the ".two" element.
+            <div class="note">
+                The element have large z-index which is always Overlapping.
+            </div>
+        </pre>
+        <div class="note">
+
+        </div>
+    </div>
+</body>
+</html>
