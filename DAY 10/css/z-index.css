@@ -1,0 +1,59 @@
+.heading{
+    color: chartreuse;
+    text-align: center;
+}
+
+.ex{
+    background-color: yellow;
+}
+
+.demo{
+    color: #fb1eff;
+    text-align: center;
+}
+
+
+.explaination{
+    background-color: aqua;
+    margin-top: 15px;
+}
+
+.headingexplain{
+    color: crimson;
+    text-align: center;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    font-weight: 700;
+    background-color: red;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: pink;
+    margin-top: 10px;
+}
+
+/* z-index */
+.one{
+    background-color: red;
+    position: relative;
+    z-index: 1;
+}
+
+.two {
+    background-color: blue;
+    position: relative;
+    bottom: 60px;
+}
