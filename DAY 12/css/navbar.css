@@ -1,0 +1,65 @@
+.heading{
+    text-align: center;
+    color: chartreuse;
+    font-weight: 700;
+}
+
+.que{
+    color: blue;
+}
+
+mark{
+    background-color: yellow;
+}
+
+.note{
+    color: white;
+    background-color: red;
+    margin-top: 10px;
+}
+
+.demo {
+    color: rgba(208, 17, 208, 0.858);
+    text-align: center;
+    margin-right: 10px;
+}
+
+.ex{
+    background-color: yellow;
+    font-weight: 600;
+    color: white;
+}
+
+.explaination {
+    background-color: aqua;
+}
+
+.topic {
+    color: blue;
+    font-weight: 700;
+}
+
+.try{
+    margin-top: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.example {
+    color: blue;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px;
+}
+
+.example p {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+section{
+    margin: 15px;
+}

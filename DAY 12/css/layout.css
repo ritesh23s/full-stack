@@ -1,0 +1,47 @@
+.heading{
+    text-align: center;
+    color: chartreuse;
+    font-weight: 700;
+}
+
+.que{
+    color: blue;
+}
+
+mark{
+    background-color: yellow;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+.demo {
+    color: rgba(208, 17, 208, 0.858);
+    text-align: center;
+}
+
+.ex{
+    background-color: yellow;
+    font-weight: 600;
+    color: white;
+}
+
+.explaination {
+    background-color: aqua;
+    margin-top: 10px;
+}
+
+.topic {
+    color: blue;
+    font-weight: 700;
+}
+
+
+/* Layout */
+/* container */
+.container{
+    background-color: yellow;
+    margin-bottom: 10px;
+}

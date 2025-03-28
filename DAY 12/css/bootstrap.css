@@ -1,0 +1,24 @@
+.heading{
+    text-align: center;
+    color: chartreuse;
+    font-weight: 700;
+}
+
+.que{
+    color: blue;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+.ex{
+    background-color: yellow;
+    font-weight: 600;
+    color: red;
+}
+
+tr{
+    font-weight: 600;
+}
