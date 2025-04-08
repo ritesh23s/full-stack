@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="img/android-chrome-192x192.png" type="image/x-icon"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <!-- home-and-srch -->
+        <div class="home-srch">
+            <!-- logo -->
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <!-- home -->
+            <div class="home">
+                <i class="fa-solid fa-house"></i>
+            </div>
+
+            <!-- searchbox -->
+            <div class="srch">
+                <div class="srch-box">
+                    <div class="srch-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" id="search" placeholder="What do you want to play?"/>
+                    <div class="brows-icon">
+                        <i class="fa-regular fa-folder-open"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- explore-more-feature -->
+        <div class="explore">
+            <button id="explore-btn">
+                <a href="#">Explore Premium</a>
+            </button>
+
+            <button class="badge" id="install-btn">
+                <i class='bx bxs-download'></i>
+                <a href="#">Install App</a>
+            </button>
+            <div class="bell">
+                <a href="#"><i class='bx bx-bell'></i></a>
+            </div>
+            <div class="user-icon">
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- main-content -->
+    <div class="main">
+
+        <!-- left-sidebar -->
+        <div class="left-sidebar">
+            <div class="lib-nav">
+                <div class="lib-opt">
+                    <div class="lib-opt-box">
+                        <div class="lib-opt-one">
+                            <i class='bx bx-library'></i>
+                            <!-- <img src="img/library_icon.png" alt=""> -->
+                            Your Library
+                        </div>
+                        <div class="lib-opt-two">
+                            <div class="pls">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+    
+                            <div class="right-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lib-cards">
+                    <div class="lib-card">
+                        <p class="p1">Create your first playlist</p>
+                        <p class="p2">It's easy we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="lib-card-one">
+                        <p class="p1">Let's find some podcasts to follow</p>
+                        <p class="p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main-content -->
+        <div class="main-content">
+
+            <!-- sticky-nav -->
+            <div class="sticky-nav">
+                <div class="nav-opt">
+                    <button class="badge all" style="background-color: white;">All</button>
+                    <button class="badge" style="background-color: #232323; color: white;">Music</button>
+                    <button class="badge" style="background-color: #232323; color: white;">Podcasts</button>
+                </div>         
+            </div>
+
+            <!-- albums -->
+            <div class="albums">
+
+                <!-- Popular radio -->
+                <div class="albm-heading">
+                    <div class="explore-more">
+                        <h2><a href="#">Popular artists</a></h2>
+                        <h3><a href="#">Show all</a></h3>
+                    </div>
+                    <div class="albm-cards">
+                        <!-- Arijit-Singh -->
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/radio-arijit-singh.jpg" class="card-img">
+                            <p class="card-info">By Spotify</p>
+                        </div>
+
+                        <!-- Kishor-Kumar -->
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/masoom-sharma.jpg" class="card-img">
+                            <p class="card-info">With Sumit Patra, Amanraj Gill, Dhand...</p>
+                        </div>
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/shreya-ghoshal.jpg" class="card-img">
+                            <p class="card-info">With A.R. Rahman Vishar-Shekhar,Atif..</p>
+                        </div>
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/diljeet-dosanjh.jpg" class="card-img">
+                            <p class="card-info">With Karan Aujla, Shubh,Sidhu Moose...</p>
+                        </div>
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/kishore-kumar.jpg" class="card-img">
+                            <p class="card-info">With Mohammad Rafi, Mukesh,Tabass...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popular albums and singles -->
+                <div class="albm-heading">
+                    <div class="explore-more">
+                        <h2><a href="#">Popular albums and singles</a></h2>
+                        <h3><a href="#">Show all</a></h3>
+                    </div>
+                    <div class="albm-cards">
+                        <div class="albm-card">
+                            <img src="img/raanjhan.jpg" class="card-img">
+                            <p class="card-title">Raanjhan (From "Do Patti")</p>
+                            <p class="card-info">Sachet-Parampara, Parampara Tandon,...</p>
+                        </div>
+                        <div class="albm-card">
+                            <img src="img/ashiqui2.jpg" class="card-img">
+                            <p class="card-title">Aashiqui2</p>
+                            <p class="card-info">Mithoon,Ankit Tiwari, Jeet Gannguli</p>
+                        </div>
+                        <div class="albm-card">
+                            <img src="img/sanam-teri-kasam.jpg" class="card-img">
+                            <p class="card-title">Sanam Teri Kasam (Original...</p>
+                            <p class="card-info">Himesh Reshammiya</p>
+                        </div>
+                        <div class="albm-card">
+                            <img src="img/glory.jpg" class="card-img">
+                            <p class="card-title">Glory</p>
+                            <p class="card-info">Yo Yo Honey Singh</p>
+                        </div>
+                        <div class="albm-card">
+                            <img src="img/ye-javanee-hai-deewani.jpg" class="card-img">
+                            <p class="card-title">Yeh Jawaani Hai Deewani</p>
+                            <p class="card-info">Pritam</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts -->
+                <div class="albm-heading">
+                    <div class="explore-more">
+                        <h2><a href="#">Charts</a></h2>
+                        <h3><a href="#">Show all</a></h3>
+                    </div>
+                    <div class="albm-cards">
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/hottest-hindi.jpg" class="card-img">
+                            <p class="card-info">Hottest Hindi music that india is listenin...</p>
+                        </div>
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/hotest-tamil.jpg" class="card-img">
+                            <p class="card-info">Tune into the Hottest tracks of Kollywood....</p>
+                        </div>
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/top-50.jpg" class="card-img">
+                            <p class="card-info">Your daily update of teh most played.......</p>
+                        </div>
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/hotest-punjabi.jpg" class="card-img">
+                            <p class="card-info">Catch the hottest Punjabi tracks,Cover...</p>
+                        </div>
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/friday-punjabi.jpg" class="card-img">
+                            <p class="card-info">New music from Guru Randhawa......</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popular artists (round image)-->
+                <div class="albm-heading">
+                    <div class="explore-more">
+                        <h2><a href="#">Popular artists</a></h2>
+                        <h3><a href="#">Show all</a></h3>
+                    </div>
+                    <div class="albm-cards">
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/arijit.jpg" class="card-img" id="artist-img">
+                            <p class="card-title">Arijit Singh</p>
+                            <p class="card-info">Artist</p>
+                        </div>
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/yo-yo-hony-singh.jpg" class="card-img" id="artist-img">
+                            <p class="card-title">Honey Singh</p>
+                            <p class="card-info">Artist</p>
+                        </div>
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/udit-narayan.jpg" class="card-img" id="artist-img">
+                            <p class="card-title">Udit Narayan</p>
+                            <p class="card-info">Artist</p>
+                        </div>
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/ar-rahman.jpg" class="card-img" id="artist-img">
+                            <p class="card-title">A.R. Rahman</p>
+                            <p class="card-info">Artist</p>
+                        </div>
+                        <div class="albm-card" id="underline-none">
+                            <img src="img/vishal-shekhar.jpg" class="card-img" id="artist-img">
+                            <p class="card-title">Vishar-Shekhar</p>
+                            <p class="card-info">Artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New releases for you -->
+                <div class="albm-heading">
+                    <div class="explore-more">
+                        <h2><a href="#">New releases for you</a></h2>
+                        <h3><a href="#">Show all</a></h3>
+                    </div>
+                    <div class="albm-cards">
+                        <div class="albm-card">
+                            <img src="img/sharry-mann.jpg" class="card-img">
+                            <p class="card-title">Hawa De Bulle</p>
+                            <p class="card-info">Sharry Mann</p>
+                        </div>
+                        <div class="albm-card">
+                            <img src="img/kahe.jpg" class="card-img">
+                            <p class="card-title">Kaahe?</p>
+                            <p class="card-info">ShNik,Shaswat Singh,Nikhita Gandhi</p>
+                        </div>
+                        <div class="albm-card">
+                            <img src="img/revenge.jpg" class="card-img">
+                            <p class="card-title">Revenge</p>
+                            <p class="card-info">Jind,Gurlez Akhtar,Isajan</p>
+                        </div>
+                        <div class="albm-card">
+                            <img src="img/savera.jpg" class="card-img">
+                            <p class="card-title">Savera</p>
+                            <p class="card-info">Jivitesh Kharbanda,IP Singh,Gautam Aditya</p>
+                        </div>
+                        <div class="albm-card">
+                            <img src="img/tora-fera.jpg" class="card-img">
+                            <p class="card-title">Tora Fera</p>
+                            <p class="card-info">Varinder Brar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- others -->
+                <!-- <div class="albm-heading">
+                    <div class="explore-more">
+                        <h2><a href="#">New releases for you</a></h2>
+                        <h3><a href="#">Show all</a></h3>
+                    </div>
+                    <div class="albm-cards">
+                        <div class="albm-card">
+                            <img src="img/sharry-mann.jpg" class="card-img">
+                            <p class="card-title">Hawa De Bulle</p>
+                            <p class="card-info">Sachet-Parampara, Parampara Tandon,...</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="foot-links">
+                <div class="links-container">
+                    <div class="links">
+                        <ul>
+                            <p>Company</p>
+                            <p><a href="#">About</a></p>
+                            <p><a href="#">Jobs</a></p>
+                            <p><a href="#">For the</a></p>
+                            <p><a href="#">Record</a></p>
+                        </ul>
+                    </div>
+
+                    <div class="links">
+                        <ul>
+                            <p>Communities</p>
+                            <p><a href="#">For Artists</a></p>
+                            <p><a href="#">Developers</a></p>
+                            <p><a href="#">Advertising</a></p>
+                            <p><a href="#">Investors</a></p>
+                            <p><a href="#">Vendors</a></p>
+                        </ul>
+                    </div>
+
+                    <div class="links">
+                        <ul>
+                            <p>Useful Links</p>
+                            <p><a href="#">Support</a></p>
+                            <p><a href="#">Free Mobile</a></p>
+                            <p><a href="#">App</a></p>
+                        </ul>
+                    </div>
+
+                    <div class="links">
+                        <ul>
+                            <p>Spotify Plan</p>
+                            <p><a href="#">Premium Individual</a></p>
+                            <p><a href="#">Premium Duo</a></p>
+                            <p><a href="#">Premium Family</a></p>
+                            <p><a href="#">Premium Students</a></p>
+                            <p><a href="#">Spotify Free</a></p>
+                        </ul>
+                    </div>
+
+                    <div class="links social-media">
+                        <ul>
+                            <i class='bx bxl-instagram'></i>
+                            <i class='bx bxl-twitter' ></i>
+                            <i class='bx bxl-facebook-circle'></i>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="foot-line">
+                    <div class="line">
+
+                    </div>
+                </div>
+
+                <div class="policy" style="margin-bottom: 10rem;">
+                    <div class="policy-opt">
+                        <p><a href="#">Legal</a></p>
+                        <p><a href="#">Safety &amp; Privacy Center</a></p>
+                        <p><a href="#">Privacy Policy</a></p>
+                        <p><a href="#">Cookies</a></p>
+                        <p><a href="#">About Ads</a></p>
+                        <p><a href="#">Accessibility</a></p>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2025 Spotify AB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- music-player -->
+        <div class="music-player">
+            <!-- played-album -->
+            <div class="played-album">
+                <div class="plyd-albu-img">
+                    <img src="img/raanjhan.jpg" alt="">
+                </div>
+                <div class="music-detail">
+                    <p class="music-title"><a href="#">Raanjhan (From "Do Patti")</a></p>
+                    <p class="music-info"><a href="#">Sachet-Parampara, Parampara Tandon, Kausar Munir</a></p>
+                </div>
+                <div class="played-album-pls">
+                    <i class='bx bx-plus-circle'></i>
+                </div>
+            </div>
+
+            <!-- player -->
+            <div class="player">
+                <div class="player-control">
+                    <i class='bx bx-shuffle'></i>
+                    <i class='bx bx-skip-previous'></i>
+                    <i class='bx bx-play-circle' style="font-size: 2rem; opacity: 1;"></i>
+                    <i class='bx bx-skip-next' ></i>
+                    <i class='bx bx-repeat'></i>
+                </div>
+                <div class="playback-bar">
+                    <span>00:30</span>
+                    <input type="range" id="progress-bar" step="1" value="10">
+                    <span>03:45</span>
+                </div>
+            </div>
+
+            <!-- control -->
+            <div class="control">
+                <div class="music-ctrl">
+                    <i class='bx bxl-deezer'></i>
+                    <i class='bx bxs-microphone'></i>
+                    <i class='bx bx-align-justify'></i>
+                    <i class='bx bx-devices'></i>
+                    <i class='bx bx-volume-full'></i>
+                    <input type="range" step="1" value="80">
+                    <i class='bx bx-minus-front'></i>
+                    <i class='bx bx-fullscreen'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
