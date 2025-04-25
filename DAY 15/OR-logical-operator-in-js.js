@@ -51,7 +51,7 @@ if (marks === 33 || marks > 33){
 let premiumMembership = false;
 let minPurchaseAmount = 500;
 
-let customerPurchaseAmount = 600;
+let customerPurchaseAmount = 550;
 
 if(customerPurchaseAmount >= minPurchaseAmount || premiumMembership){
     console.log("Congratulation! You get discount.");
@@ -59,3 +59,59 @@ if(customerPurchaseAmount >= minPurchaseAmount || premiumMembership){
     console.log("sorry! no discount available.");
 }
 
+// Question 5). Movie Ticket Discount
+// If a person is under 12 years old OR over 60 years old, they get a discount on their movie ticket.
+// Write a program that checks the age and prints whether the person gets a discount or not.
+
+let purchaseTicket = true;
+let personAge = 11;
+
+if(purchaseTicket === true && (personAge < 12 || personAge > 60)){
+    console.log("You get discount");
+}else{
+    console.log("Not Available!");
+}
+
+// Question 6). Event Entry
+// A person is allowed to enter an event if they have a VIP pass OR if they are a guest of the organizer.
+// Write a program that checks these two conditions and prints whether the person can enter the event.
+
+let personVipPass = true;
+let personOrganizerGuest = false;
+
+if (personVipPass || personOrganizerGuest){
+    console.log("Pleae Enter the event Your Welcome!");
+} else{
+    console.log("You are not Aplicable!");
+}
+
+// Question 7). Free Shipping Eligibility
+// Customers get free shipping if their order total is over ₹1000 OR they have a free shipping coupon.
+// Write a program to check if the customer is eligible for free shipping.
+
+let minOrderAmountForFreeShipping = 1000;
+
+let customerOrderAmount = 1001;
+let customerFreeCoupon = false
+
+if (customerOrderAmount > minOrderAmountForFreeShipping || customerFreeCoupon){
+    console.log("Free Delivery");
+}else{
+    console.log("Delivery Charge 60 rupees");
+}
+
+
+// Question 8). Check if a character is a vowel (a, e, i, o, u).
+// Write a program to input a character and check if it is a vowel using OR operator.
+
+let enterCharacter = "o"; 
+
+enterCharacter = enterCharacter.toLowerCase()
+
+if (
+    enterCharacter === "a" || enterCharacter === "e" || enterCharacter === "i" || enterCharacter === "o" || enterCharacter === "u"
+) {
+    console.log("Enter character is a vowel");
+} else {
+    console.log("Is not a vowel");
+}

@@ -54,8 +54,10 @@ if (!(balance >= balanceWithdrawal)) {
     console.log("Withdrawal successful.");
 }
 
+
 // We can also combine multiple logical operator like this = 
 let marrkss = 75;
 if ((marrkss > 33 && marrkss <= 80) || !false) {
     console.log("pass");
 } else ("fail");
+
