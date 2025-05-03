@@ -1,2 +1,2 @@
 # full-stack
-full-stack-development
+full-stack-web-development
