@@ -1,0 +1,57 @@
+.heading{
+    color: chartreuse;
+}
+
+.ex{
+    background-color: yellow;
+}
+
+.demo{
+    color: #fb1eff;
+    text-align: center;
+}
+
+
+.explaination{
+    background-color: aqua;
+}
+
+.headingexplain{
+    color: crimson;
+    text-align: center;
+}
+
+.topic{
+    color: blue;
+}   
+
+.subtopic{
+    color: #fb1eff;
+}
+
+.note{
+    color: white;
+    background-color: red;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+    color: blue;
+}
+
+.logicaltype{
+    display: flex;
+    flex-direction: column;
+}
