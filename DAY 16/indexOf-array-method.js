@@ -23,3 +23,4 @@ console.log(cities.indexOf("lucknow"));
 // Returns -1 if the element is not found.
 
 console.log(cities.indexOf("delhi"));
+
