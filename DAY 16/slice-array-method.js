@@ -30,3 +30,11 @@ console.log(books.slice(3));
 // if we pass a negative value in argument like this 
 console.log(books.slice(-3)); // output = ['inferno', '1984', 'the alchemist']
 // means slice is convert this -3 = (total lenght of array - 3) and return the converted index array. "books.slice(lenght - index)"
+
+// if we pass invalid argument then we get output an empty array [] 
+console.log(books.slice(6)); // output = [] empty array beacause we 7th index is not persents in array.
+
+// if we also pass in argument = length then we get output empty [] array
+console.log(books.slice(books.length)); // output = [] empty array
+
+
